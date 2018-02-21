@@ -10,3 +10,4 @@
 | Serhii Sibirtsev | 88.б | 178.г | 243.а | 331.а | 561 |
 | Kseniia Malinovska | 88.в | 178.д | 243.б | 331.б | 562 |
 | Taras Stetsiak | 88.г | 182 | 241 | 332 | 568 |
+| Olga Hasyuk | 86.г | 184 | 242 | 340 | 569 |
