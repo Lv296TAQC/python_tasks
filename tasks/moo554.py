@@ -1,11 +1,9 @@
 #!/usr/bin/python
+"""Oleksandr's Module"""
 
 
 def task554(from_input):
     """Function solves task 554 MOO."""
-    a_pifagor = 0
-    b_pifagor = 0
-    c_pifagor = 0
     key = 1
     result = {}
     for c_pifagor in range(from_input):

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+"""Oleksandr's Module"""
 
 
 def task107(from_input):
