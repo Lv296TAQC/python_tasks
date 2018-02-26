@@ -1,12 +1,12 @@
-def total_sum(number):
+"""Finding interchangeable sum of digits n"""
+def total_sum1(number):
+    """Method finding total_sum"""
     array = [int(d) for d in str(number)]
-    sum = 0
+    sum1 = 0
     for index, element in enumerate(array):
         if index % 2 == 0:
-            sum+=element
+            sum1 += element
         else:
-            sum-=element
+            sum1 -= element
 
-    return sum
-
-print(total_sum(5))
+    return sum1
