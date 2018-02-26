@@ -25,16 +25,3 @@ def validate(number):
         return False
 
 print(validate(210))
-
-
-
-
-
-
-
-
-
-#def verify_division(a, num):
-    #for index, num in enumerate(a):
-        #if num / 2 and num / 3 and num / 5:
-            #a[index] = 0
