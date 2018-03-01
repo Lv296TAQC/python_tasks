@@ -1,9 +1,16 @@
 #!/usr/bin/python
-"""Oleksandr's Module"""
+"""Oleksandr's module for solving task 224"""
 
 
 def task224(from_input):
-    """Function solves task 224 MOO."""
+    """Take input natural number and search for all it's natural dividers
+
+    Args:
+        from_input (int): Incoming value
+
+    Returns:
+        result (list): Return list of all natural dividers
+    """
     result = []
     for try_natural in range(1, from_input + 1):
         if from_input % try_natural == 0:

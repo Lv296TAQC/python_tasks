@@ -1,9 +1,17 @@
 #!/usr/bin/python
-"""Oleksandr's Module"""
+"""Oleksandr's module for solving task 554"""
 
 
 def task554(from_input):
-    """Function solves task 554 MOO."""
+    """Take input natural number and search for all it's Pythagorean triples,
+    that like 'a < b < c < input natural number'
+
+    Args:
+        from_input (int): Incoming value
+
+    Returns:
+        result (dict): Return dict with all Pythagorean triples
+    """
     key = 1
     result = {}
     for c_pifagor in range(from_input):
