@@ -8,7 +8,3 @@ def total_sum(number_n):
         formula = ((-1) ** (k * (k - 1) * 0.5)) / math.factorial(k)
         sum1 += formula
     return sum1
-
-
-
-

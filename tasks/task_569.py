@@ -24,4 +24,3 @@ def divide_by_prime(number):
 def validate(number):
     """Check division on prime numbers."""
     return number % 2 == 0 and number % 3 == 0 and number % 5 == 0 and not divide_by_prime(number)
-
