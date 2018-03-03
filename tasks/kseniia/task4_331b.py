@@ -11,6 +11,10 @@ def func(numb):
 
     Return:
         answer (list): contains tuples of the three natural numbers.
+
+    Example:
+        >>> print(func(100))
+        [(8, 6, 0), (10, 0, 0)]
     """
     answer = []
     for i in range(numb):
@@ -19,6 +23,3 @@ def func(numb):
                 if i * i + j * j + k * k == numb and k <= j <= i:
                     answer.append((i, j, k))
     return answer
-
-
-print(func(100))

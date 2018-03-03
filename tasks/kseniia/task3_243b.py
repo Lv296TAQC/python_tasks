@@ -11,6 +11,10 @@ def func(numb):
 
     Return:
         answer (list): contains tuples of pairs of the natural numbers.
+
+    Example:
+        >>> print(func(100))
+        [(8, 6), (10, 0)]
     """
     answer = []
     for i in range(numb):
@@ -18,6 +22,3 @@ def func(numb):
             if i * i + j * j == numb and i >= j:
                 answer.append((i, j))
     return answer
-
-
-print(func(100))

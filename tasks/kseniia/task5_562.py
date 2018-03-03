@@ -10,25 +10,33 @@ def split_into_digits(numb):
 
     Return:
         answer (list): contains digits of the numb.
+
+    Example:
+        >>> print(split_into_digits(123))
+        [1, 2, 3]
     """
     answer = []
     while numb > 0:
         answer.append(numb % 10)
-        numb /= 10
+        numb //= 10
     return answer[::-1]
 
 
-def get_armstrong_numbs_from(start, end):
+def get_armstrong_numbs(start, end):
     """
     Get all Armstrong numbers(PPDI)
     from given interval [start, end].
 
     Args:
-        a (int): any number.
-        b (int): greater than a.
+        start (int): any number.
+        end (int): greater than start.
 
     Return:
         answer (list): contains Armstrong numbers.
+
+    Example:
+        >>> print(get_armstrong_numbs(10, 999))
+        [153, 370, 371, 407]
     """
     answer = []
     for i in range(start, end):
@@ -38,6 +46,3 @@ def get_armstrong_numbs_from(start, end):
         if sum(arr) == i:
             answer.append(i)
     return answer
-
-
-print(get_armstrong_numbs_from(10, 999))
