@@ -1,16 +1,16 @@
 """"Equate lagrange's theorem for given number"""
 
-from tasks.task_88d import input_and_validate
+from tasks.task_88d import validate
 
 
 def lagrange(natural):
     """"Find needed squares of numbers
 
-        Args:
-            natural (int): Natural validated number from input
+    Args:
+        natural (int): Any integer (natural) number
 
-        Returns:
-            tuple: Tuple of integers, which sum of squares is equals to given natural
+    Returns:
+        tuple: Tuple of integers, which sum of squares is equals to given natural
 
     """
     natural_copy = natural
@@ -29,15 +29,18 @@ def lagrange(natural):
             x_val = x_val - 1
 
 
-def main():
-    """"Ask for valid input, find each square of lagrange's theorem, print result"""
-    natural = input_and_validate()
-    combination = lagrange(natural)
-    print("{} =".format(natural), end='')
-    for i in enumerate(combination):
-        print(" {}^2({})".format(combination[i], combination[i]*combination[i]),
-              "" if len(combination) == i+1 else "+", end='')
+def print_solution():
+    """"Validate input, find each square of lagrange's theorem, print result"""
+    natural = 188
+    if validate(natural):
+        combination = lagrange(int(natural))
+        print(f"{natural} =", end='')
+        for i, value in enumerate(combination):
+            print(f" {value}^2({value ** 2})",
+                  "" if len(combination) == i+1 else "+", end='')
+    else:
+        print("Invalid input. Please write correct natural number")
 
 
 if __name__ == '__main__':
-    main()
+    print_solution()

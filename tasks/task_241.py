@@ -1,17 +1,17 @@
 """"Evaluate given difficult formula"""
 
-from tasks.task_88d import input_and_validate
+from tasks.task_88d import validate
 
 
 def difficult_formula(natural, x_val):
     """Find algebraic sum for given formula
 
-        Args:
-            natural (int): Randomly generated list of integers
-            x_val (float): Randomly generated list of integers
+    Args:
+        natural (int): Any integer (natural) number
+        x_val (float): Any float number
 
-        Returns:
-            result: Result of equation
+    Returns:
+        complex: Result of equation
 
     """
     result = 0
@@ -19,30 +19,40 @@ def difficult_formula(natural, x_val):
     while i <= natural:
         result += (pow(-1, (i ** 0.5))) / i * pow(x_val, i)
         i += 1
-    return result
+    return complex(result)
 
 
-def while_not_correct_values():
-    """Ask for input until valid data entered
+def validate_values(natural, x_val):
+    """Check if valid data is entered
 
-            Returns:
-                tuple: Tuple of inputted float and integer values
+    Args:
+        natural (int): Any integer (natural) number
+        x_val (float): Any float number
+
+    Returns:
+        bool: True, if input data is valid, False otherwise
 
     """
-    x_val = input("Enter real number: ")
-    try:
-        x_val = float(x_val)
-    except ValueError:
-        print("Not a number, please write correct (natural number) value")
-    return input_and_validate(), x_val
+    if validate(natural):
+        try:
+            float(x_val)
+        except (ValueError, TypeError):
+            return False
+        else:
+            return True
+    else:
+        return False
 
 
-def main():
-    """"Ask for valid input, evaluate sum, print result"""
-    natural, x_val = while_not_correct_values()
-    result = difficult_formula(natural, x_val)
-    print(result)
+def print_solution():
+    """"Validate input, evaluate sum, print result"""
+    natural, x_val = 1, 9.2
+    if validate_values(natural, x_val):
+        result = difficult_formula(int(natural), float(x_val))
+        print(result)
+    else:
+        print("Invalid input. Please write correct values: natural number and float number")
 
 
 if __name__ == '__main__':
-    main()
+    print_solution()
