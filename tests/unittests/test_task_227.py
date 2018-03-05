@@ -1,6 +1,5 @@
 import unittest
-from tasks.task_227 import (comparison,
-                             divisor)
+from tasks.task_227 import comparison, divisor
 
 
 class TestsTask227(unittest.TestCase):
