@@ -11,11 +11,12 @@ def swap_numb(numb):
 
     Return:
         int, where the first and the last digits are swapped.
+
+    Example:
+        >>> print(swap_numb(1356))
+        6351
     """
     rank = pow(10, int(log10(numb)))
     first = numb // rank
     last = numb % 10
     return numb - (first - last) * rank - last + first
-
-
-print(swap_numb(1356))
