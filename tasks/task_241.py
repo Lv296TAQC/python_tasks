@@ -1,6 +1,6 @@
 """"Evaluate given difficult formula"""
 
-from tasks.task_88r import input_and_validate
+from tasks.task_88d import input_and_validate
 
 
 def difficult_formula(natural, x_val):
