@@ -1,23 +1,28 @@
-"""This module solves the task 178b from zadachi.pdf"""
+# -*- coding: utf-8 -*-
+"""This module solves the task 178b from zadachi.pd"""
+import math
 
 
-def multiple_numbers(list_of_n_numbers):
+def count_sq(posl):
     """
-    Determine the number of numbers that are multiples of 3 and not multiple 5
+    count the number is the square root  of a even number
+    arg:
+        posl list contains numbers
 
-    Arg:
-        list_of_n_numbers(list): list of natural number
+    return:
+        count of the number which is a square root of a even number
 
-    Return:
-        int, which return count of list_of_n_numbers
     """
+    posl = list(posl)
+    addposl = []
+    poslsq = []
+    for k in posl:
+        if k % 2 == 0:
+            addposl = addposl + [k]  # вибираємо парні бо квадрат парного парне
+    for j in addposl:
+        if math.sqrt(j) % 2 == 0:  # чи корінь є парним
+            poslsq = poslsq + [j]
+    return len(poslsq)
 
-    counter = 0
-    for i in list_of_n_numbers:
-        if i % 3 == 0 and i % 5 == 1:
-            counter += 1
-    return counter
 
-
-if __name__ == '__main__':
-    print(multiple_numbers(list_of_n_numbers=[6, 21, 36, 51, 66, 81, 96, 111, 126]))
+#print count_sq([1, 5, 100, 9, 36, 16])

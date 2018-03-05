@@ -1,29 +1,18 @@
-"""
-This module solves task 88_б from zadachi.pdf.
-"""
-
-from sys import argv
+# -*- coding: utf-8 -*-
+"""This module solves the task 88a from zadachi.pd"""
 
 
-def reverse_int(number):
+def three_go_in(numb):
     """
-    Description: reverse string and return as int number.
-
-    Arg: string in int number format, like "12".
-
-    Return: reversed int number.
-
+    checks for the entry of 3 to the square of the number
+    arg:
+        numb:any number
+    return:
+        True if 3 entry to the square of the number
+        False if 3 not entry to the square of the number
     """
-    return int(number[::-1])
-
-
-def main():
-    """Start 'reverse_int' function."""
-    try:
-        print(reverse_int(argv[1]))
-    except ValueError:
-        print("Please type number in string format, like '15'.")
-
-
-if __name__ == "__main__":
-    main()
+    numb_sq = numb ** 2
+    numb_sq = str(numb_sq)
+    if (numb_sq.find('3')) >= 0:  # return -1 if not and if there is a position.
+        return True
+    return False
