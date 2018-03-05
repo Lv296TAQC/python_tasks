@@ -1,16 +1,14 @@
 """"Write one to the start and to the end of given natural number"""
 
-import sys
-
 
 def one_bounds(natural):
     """Add one to the first and to the last digit, two to one-digit natural number
 
-        Args:
-            natural (int): Natural validated number from input
+    Args:
+        natural (int): Natural validated number from input
 
-        Returns:
-            int: Natural number with added one to the first and to the last digit
+    Returns:
+        int: Natural number with added one to the first and to the last digit
 
     """
     natural_most = natural
@@ -23,34 +21,34 @@ def one_bounds(natural):
     return natural + counter + 1
 
 
-def input_and_validate():
+def validate(natural):
     """Ask for input until valid data entered
 
-            Returns:
-                int: Natural number, but only if input data is valid
+    Args:
+        natural (int): Any integer (natural) number
+
+    Returns:
+        bool: True, if input data is valid, False otherwise
 
     """
-    while True:
-        natural = input("Enter natural (positive integer) number: ")
-        if natural == 'bye' or natural == 'exit':
-            sys.exit(0)
-        try:
-            natural = int(natural)
-        except ValueError:
-            print("Not a number, please write correct (natural number) value")
-        else:
-            if natural < 1:
-                print("You entered not natural number, please enter positive integer number")
-                continue
-            return natural
+    try:
+        natural = int(natural)
+    except (ValueError, TypeError):
+        return False
+    else:
+        if natural < 1:
+            return False
+        return True
 
 
-def main():
-    """"Ask for valid input, add numbers, print result"""
-    natural = input_and_validate()
-    num = one_bounds(natural)
-    print(num)
+def print_solution():
+    """"Validate input, add numbers, print result"""
+    natural = 13456788
+    if validate(natural):
+        print(one_bounds(int(natural)))
+    else:
+        print("Invalid input. Please write correct natural number")
 
 
 if __name__ == '__main__':
-    main()
+    print_solution()
