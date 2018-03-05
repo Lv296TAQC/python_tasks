@@ -1,9 +1,9 @@
 import unittest
-from tasks.third_227 import (comparison,
+from tasks.task_227 import (comparison,
                              divisor)
 
 
-class Test227(unittest.TestCase):
+class TestsTask227(unittest.TestCase):
 
     def test_third_227_comparison(self):
         self.assertListEqual({1, -1, 2, -2, 3, -3, 6, -6}, comparison(18, 6))

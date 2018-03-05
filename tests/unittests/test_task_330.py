@@ -1,9 +1,9 @@
 import mock
 import unittest
-from tasks.fourth_330 import minus_last, ideal
+from tasks.task_330 import minus_last, ideal
 
 
-class Test330(unittest.TestCase):
+class TestsTask330(unittest.TestCase):
 
     @mock.patch('tasks.third_227')
     def test_third_330_minus_last(self, mock_path):

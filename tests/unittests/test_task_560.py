@@ -1,9 +1,9 @@
 import mock
 import unittest
-from tasks.fifth_560 import amicable
+from tasks.task_560 import amicable
 
 
-class Test560(unittest.TestCase):
+class TestsTask560(unittest.TestCase):
 
     def test_fifth_560(self):
         """Ask how to implement side_effect for minus_last in loop"""
