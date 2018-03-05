@@ -1,11 +1,11 @@
 """"Test for task3_243b"""
 
-import unittest
+from unittest import TestCase
 
 from tasks.task_243b import func
 
 
-class TestsTask243b(unittest.TestCase):
+class TestsTask243b(TestCase):
     """
         Test to check if all possible pairs of natural numbers, which sum of squares
         is equal to the given natural number and satisfy x1 >= x2, are found.
@@ -38,6 +38,22 @@ class TestsTask243b(unittest.TestCase):
         self.assertIsInstance(int_, int)
         self.assertIsInstance(res, list)
 
+    def test_swap_numb_third_a(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(TypeError, func, "1e1")
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_swap_numb_third_b(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(TypeError, func, [complex(1, 2)])
+
+    def test_swap_numb_third_c(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(TypeError, func, (0, 0, 0))
+
+    def test_swap_numb_third_d(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(ValueError, func, 0)
+
+    def test_swap_numb_third_e(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(ValueError, func, -1)

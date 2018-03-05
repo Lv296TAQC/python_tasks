@@ -1,40 +1,51 @@
 """"Test for task5_562"""
 
 
-import unittest
+from unittest import TestCase
 from unittest.mock import patch
 
 from tasks.task_562 import split_into_digits, get_armstrong_numbs
 
 
-class TestsTask562(unittest.TestCase):
+class TestsTask562(TestCase):
     """
         Test to check if function split_into_digits is splitting given natural
         number into digits, and if function get_armstrong_numbs founds the right
         and complete list of armstrong's numbers, which consists of 2, 3 and four digits.
     """
 
-    def test_split_into_digits_first(self):
+    def test_split_into_digits_first_a(self):
         """Check if expected results correspond to actual with a specific input"""
         int_ = 120
         res = split_into_digits(int_)
         self.assertEqual(res, [1, 2, 0])
 
+    def test_split_into_digits_first_b(self):
+        """Check if expected results correspond to actual with a specific input"""
         int_ = 1
         res = split_into_digits(int_)
         self.assertEqual(res, [1])
 
+    def test_split_into_digits_first_c(self):
+        """Check if expected results correspond to actual with a specific input"""
         int_ = 9876543210
         res = split_into_digits(int_)
         self.assertEqual(res, [9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 
-    def test_split_into_digits_second(self):
+    def test_split_into_digits_second_a(self):
+        """Test to check if input and output types of values correspond to
+        intended, according to the function docstrings.
+        """
+        int_ = 100
+        split_into_digits(int_)
+        self.assertIsInstance(int_, int)
+
+    def test_split_into_digits_second_b(self):
         """Test to check if input and output types of values correspond to
         intended, according to the function docstrings.
         """
         int_ = 100
         res = split_into_digits(int_)
-        self.assertIsInstance(int_, int)
         self.assertIsInstance(res, list)
 
     def test_get_armstrong_numbs_first(self):
@@ -61,7 +72,7 @@ class TestsTask562(unittest.TestCase):
         self.assertIsInstance(right, int)
         self.assertIsInstance(res, list)
 
-    @patch('tasks.kseniia.task5_562.split_into_digits', return_value=[4, 0, 7])
+    @patch('tasks.task_562.split_into_digits', return_value=[4, 0, 7])
     def test_get_armstrong_numbs_third(self, split_into_digits):    # pylint: disable=W0621
         """Check if expected results correspond to actual with a specific input, which isn't
         intended to change result hence mocked function split_into_digits"""
@@ -70,7 +81,3 @@ class TestsTask562(unittest.TestCase):
         res = get_armstrong_numbs(left, right)
         self.assertEqual(split_into_digits(407), [4, 0, 7])
         self.assertEqual(res, [407])
-
-
-if __name__ == '__main__':
-    unittest.main()
