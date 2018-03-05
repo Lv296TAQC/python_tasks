@@ -48,6 +48,10 @@ class TestsTask562(TestCase):
         res = split_into_digits(int_)
         self.assertIsInstance(res, list)
 
+    def test_split_into_digits_third_a(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(TypeError, split_into_digits, "kal-el")
+
     def test_get_armstrong_numbs_first(self):
         """Check if expected results correspond to actual with a specific input"""
         left = 22
@@ -72,8 +76,12 @@ class TestsTask562(TestCase):
         self.assertIsInstance(right, int)
         self.assertIsInstance(res, list)
 
+    def test_get_armstrong_numbs_third_a(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(TypeError, get_armstrong_numbs, "joer-el")
+
     @patch('tasks.task_562.split_into_digits', return_value=[4, 0, 7])
-    def test_get_armstrong_numbs_third(self, split_into_digits):    # pylint: disable=W0621
+    def test_get_armstrong_numbs_fiurth(self, split_into_digits):    # pylint: disable=W0621
         """Check if expected results correspond to actual with a specific input, which isn't
         intended to change result hence mocked function split_into_digits"""
         left = 10
