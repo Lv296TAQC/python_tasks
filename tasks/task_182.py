@@ -2,7 +2,7 @@
 
 import random
 
-from tasks.task1_exercise88r import input_and_validate
+from tasks.task_88r import input_and_validate
 
 
 def sum_div5_notdiv7(list_):

@@ -2,7 +2,7 @@
     operators, so its result equals to given natural number
 """
 
-from tasks.task1_exercise88r import input_and_validate
+from tasks.task_88r import input_and_validate
 
 
 def find_subset(id_):
