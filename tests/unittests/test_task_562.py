@@ -52,20 +52,26 @@ class TestsTask562(TestCase):
         """Test to check if expected Error raises when input is not valid"""
         self.assertRaises(TypeError, split_into_digits, "kal-el")
 
-    def test_get_armstrong_numbs_first(self):
+    def test_split_into_digits_third_b(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(ValueError, split_into_digits, -1000)
+
+    def test_get_armstrong_first_a(self):
         """Check if expected results correspond to actual with a specific input"""
         left = 22
         right = 4444
         res = get_armstrong_numbs(left, right)
         self.assertEqual(res, [153, 370, 371, 407, 1634])
 
+    def test_get_armstrong_first_b(self):
+        """Check if expected results correspond to actual with a specific input"""
         left = 10
         right = 9999
         res = get_armstrong_numbs(left, right)
         self.assertEqual(res, [153, 370, 371, 407, 1634, 8208, 9474])
         self.assertEqual(len(res), 7)
 
-    def test_get_armstrong_numbs_second(self):
+    def test_get_armstrong_second_a(self):
         """Test to check if input and output types of values correspond to
         intended, according to the function docstrings.
         """
@@ -76,12 +82,25 @@ class TestsTask562(TestCase):
         self.assertIsInstance(right, int)
         self.assertIsInstance(res, list)
 
-    def test_get_armstrong_numbs_third_a(self):
+    def test_get_armstrong_second_b(self):
+        """Test to check if input and output types of values correspond to
+        intended, according to the function docstrings.
+        """
+        left = 99
+        right = 1000
+        res = get_armstrong_numbs(left, right)
+        self.assertIsInstance(res, list)
+
+    def test_get_armstrong_third_a(self):
         """Test to check if expected Error raises when input is not valid"""
-        self.assertRaises(TypeError, get_armstrong_numbs, "joer-el")
+        self.assertRaises(TypeError, get_armstrong_numbs, "joer-el", "cryot")
+
+    def test_get_armstrong_third_b(self):
+        """Test to check if expected Error raises when input is not valid"""
+        self.assertRaises(ValueError, get_armstrong_numbs, -1000, 1000)
 
     @patch('tasks.task_562.split_into_digits', return_value=[4, 0, 7])
-    def test_get_armstrong_numbs_fiurth(self, split_into_digits):    # pylint: disable=W0621
+    def test_get_armstrong_fourth(self, split_into_digits):    # pylint: disable=W0621
         """Check if expected results correspond to actual with a specific input, which isn't
         intended to change result hence mocked function split_into_digits"""
         left = 10

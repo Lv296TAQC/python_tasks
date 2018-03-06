@@ -73,4 +73,4 @@ class TestsTask331b(TestCase):
 
     def test_func_third_f(self):
         """Test to check if expected Error raises when input is not valid"""
-        self.assertRaises(ValueError, func, -1)
+        self.assertRaises(ValueError, func, -10)

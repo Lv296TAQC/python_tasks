@@ -7,6 +7,7 @@ from tasks.task_88c import swap_numb
 
 class TestsTask88c(TestCase):
     """Test to check if the first and the last digits of the number are changing."""
+
     def test_swap_numb_first_a(self):
         """Check if expected results correspond to actual with a specific input"""
         res = swap_numb(1000)
