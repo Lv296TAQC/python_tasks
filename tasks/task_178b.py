@@ -3,15 +3,11 @@
 import math
 
 
-def count_sq(posl):
+def count_sq(posl: list) -> int:
     """
     count the number is the square root  of a even number
-    arg:
-        posl list contains numbers
-
-    return:
-        count of the number which is a square root of a even number
-
+    :param posl:list contains numbers
+    :return:int count of the number which is a square root of a even number
     """
     posl = list(posl)
     addposl = []
@@ -23,6 +19,3 @@ def count_sq(posl):
         if math.sqrt(j) % 2 == 0:  # чи корінь є парним
             poslsq = poslsq + [j]
     return len(poslsq)
-
-
-#print count_sq([1, 5, 100, 9, 36, 16])

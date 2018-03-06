@@ -3,16 +3,11 @@
 from tasks.task_330 import minus_last
 
 
-def amicable():
+def amicable() -> list:
     """
-       Finds all amicable numbers  for a range of 200-300
-        arg:
-        None
-
-        return:
-        returns the list with pairs amicable numbers
-
-               """
+    Finds all amicable numbers  for a range of 200-300
+    :return: list with pairs amicable numbers
+    """
     amica_list = []
     level_up = 0
     for k in range(200, 300):
@@ -22,6 +17,3 @@ def amicable():
                 if minus_last(j) == k:
                     amica_list = (amica_list) + [(k, j)]
     return amica_list
-
-
-#print amicable()
