@@ -2,15 +2,13 @@
 """Oleksandr's module for solving task 323"""
 
 
-def task323(from_input):
-    """Take input natural number and search for all it's coprime integers
+def task323(from_input: int) -> list:
+    """
+    Take input natural number and search for all it's coprime integers.
     that < input value
 
-    Args:
-        from_input (int): Incoming value.
-
-    Returns:
-        result (list): Return list of all coprime integers
+    :param int from_input: Incoming value.
+    :return list result: Return list of all coprime integers.
     """
     result = []
     check_for_div = 0
