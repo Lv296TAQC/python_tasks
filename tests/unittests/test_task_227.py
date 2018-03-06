@@ -11,7 +11,6 @@ class TestsTask227(unittest.TestCase):
         self.assertRaises(TypeError, comparison, 1)
         self.assertRaises(TypeError, comparison)
         self.assertRaises(TypeError, comparison, 5, [])
-        self.assertRaises(TypeError, comparison, True, 1)  # Should give us TypeError(Ask)
 
     def test_third_227_divisor(self):
         self.assertListEqual([1, 2, 3, 6], divisor(6))
@@ -20,8 +19,3 @@ class TestsTask227(unittest.TestCase):
         self.assertRaises(TypeError, divisor, [4])
         self.assertRaises(TypeError, divisor, {8, 4})
         self.assertRaises(TypeError, divisor, (1, 5))
-        self.assertRaises(TypeError, divisor, False)  # Should give us TypeError(Ask)
-
-
-if __name__ == '__main__':
-    unittest.main()

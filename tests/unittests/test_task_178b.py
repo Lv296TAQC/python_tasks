@@ -10,8 +10,3 @@ class TestsTask178b(unittest.TestCase):
         self.assertRaises(TypeError, count_sq, {'346'})
         self.assertRaises(TypeError, count_sq, 8)
         self.assertRaises(TypeError, count_sq)
-        self.assertRaises(TypeError, count_sq, False)
-
-
-if __name__ == '__main__':
-    unittest.main()

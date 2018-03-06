@@ -43,4 +43,4 @@ def ideal(limit):
     return ideal_list
 
 
-#print ideal(8129)
+#print(ideal(False))
