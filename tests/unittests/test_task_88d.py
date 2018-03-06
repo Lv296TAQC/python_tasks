@@ -23,6 +23,6 @@ class TestsTask88d(unittest.TestCase):
                 self.assertFalse(validate({}))
                 self.assertFalse(validate([]))
 
-
-if __name__ == '__main__':
-    unittest.main()
+#
+# if __name__ == '__main__':
+#     unittest.main()

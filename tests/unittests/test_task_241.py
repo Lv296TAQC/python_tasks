@@ -16,6 +16,6 @@ class TestsTask241(unittest.TestCase):
     @unittest.expectedFailure
     def test_validate_values_for_errors(self):
         self.assertRaises((TypeError, ValueError), validate_values, -1, 'qwerty')
-
-if __name__ == '__main__':
-    unittest.main()
+#
+# if __name__ == '__main__':
+#     unittest.main()

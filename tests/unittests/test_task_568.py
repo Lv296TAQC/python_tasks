@@ -28,5 +28,5 @@ class TestsTask568(unittest.TestCase):
                 self.assertEqual(single_solution(123456), 'No possible solutions')
 
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
