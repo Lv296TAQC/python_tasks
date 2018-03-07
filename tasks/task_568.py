@@ -2,18 +2,26 @@
     operators, so its result equals to given natural number
 """
 
-from tasks.task_88d import validate
+from tasks.task_88d import is_natural
 
 
-def find_subset(combination_id):
+def find_subset(combination_id: int) -> int:
     """Evaluate subset for given id
 
-    Args:
-        combination_id (int): Number (id) of subset, e.g. '5' - 00000012 - "1234567+8-9"
+    :param combination_id: Number (id) of subset, e.g. '5' - 00000012 - "1-2+3456789"
+    :return: Evaluated number in decimal numeral system which represents evaluated subset
 
-    Returns:
-        int: Evaluated number in decimal numeral system which represents evaluated subset
+    :Example:
 
+    In this example -456789 will be returned as a result of evaluation, received as result of next
+        steps: converting 25 to ternary number, putting operations: concatenation if 0 in ternary,
+        sum if 1 in ternary, division if 2 in ternary, in reversed order between set of numbers
+        1 2 3 4 5 6 7 8 9. See example in parameters.
+
+    .. doctest::
+
+        >>> print(find_subset(25))
+        -456789
     """
     result = 0
     l_bound = 0
@@ -36,12 +44,10 @@ def find_subset(combination_id):
     return result
 
 
-def print_subset(combination_id):
+def print_subset(combination_id: int):
     """Print given combination
 
-    Args:
-        combination_id (int): Number (id) of subset, e.g. '5' - 00000012 - "1234567+8-9"
-
+    :param combination_id: Number (id) of subset, e.g. '5' - 00000012 in reverse order "1-2+3456789"
     """
     id_ = combination_id
     for j in range(1, 9):
@@ -50,19 +56,23 @@ def print_subset(combination_id):
     print("9", end='')
 
 
-def single_solution(natural):
+def single_solution(natural: int) -> str:
     """Find single solution for given number after validation
 
-    Args:
-        natural (int): Any given integer (natural) number
+    :param natural: Any given integer (natural) number
+    :return: First founded solution (equation) or message that it is
+        impossible to generate such equation
 
-    Returns:
-        str: First founded solution (equation) or message that it
-            is impossible to generate such equation
+    In this example 1-2+3-4+5-67+89 will be returned as a result of matching evaluated subset with
+    number 25 and converting it to needed equation.
 
+    .. doctest::
+
+        >>> print(single_solution(25))
+        1-2+3-4+5-67+89
     """
     lists = ""
-    if validate(natural):
+    if is_natural(natural):
         for i in range(6561):
             calculated_value = find_subset(i)
             if calculated_value == int(natural):
@@ -76,14 +86,13 @@ def single_solution(natural):
     return "Invalid input. Please write correct natural number"
 
 
-def print_all_solutions(natural):
-    """"Validate input, find all possible subsets, print results
+def print_all_solutions(natural: int):
+    """Validate input, find all possible subsets, print results
 
     Args:
         natural (int): Any given integer (natural) number
-
     """
-    if validate(natural):
+    if is_natural(natural):
         print(f"\nAll possible subsets for given natural value '{natural}'")
         count = 0
         for i in range(6561):

@@ -1,18 +1,25 @@
 """"Evaluate given difficult formula"""
 
-from tasks.task_88d import validate
+from tasks.task_88d import is_natural
 
 
-def difficult_formula(natural, x_val):
+def difficult_formula(natural, x_val) -> complex:
     """Find algebraic sum for given formula
 
-    Args:
-        natural (int): Any integer (natural) number
-        x_val (float): Any float number
+    :param natural: Any integer (natural) number
+    :param x_val: Any float number
 
-    Returns:
-        complex: Result of equation
+    :return: Result of equation
 
+    :Example:
+
+    In this example (205, 3) will be returned as (sum, quantity) of only numbers from
+        list [5, 50, 3, 150, 11] which are dividing by 5 and not dividing by 7
+
+    .. doctest::
+
+        >>> print(difficult_formula(1, 25.05))
+        (-25.05+0j)
     """
     result = 0
     i = 1
@@ -22,18 +29,15 @@ def difficult_formula(natural, x_val):
     return complex(result)
 
 
-def validate_values(natural, x_val):
-    """Check if valid data is entered
-
-    Args:
-        natural (int): Any integer (natural) number
-        x_val (float): Any float number
-
-    Returns:
-        bool: True, if input data is valid, False otherwise
-
+def is_natural_and_float(natural, x_val):
     """
-    if validate(natural):
+    Check if valid data is entered.
+
+    :param natural: Any integer (natural) number
+    :param x_val: Any float number
+    :return:  True, if input data is valid, False otherwise
+    """
+    if is_natural(natural):
         try:
             float(x_val)
         except (ValueError, TypeError):
@@ -47,7 +51,7 @@ def validate_values(natural, x_val):
 def print_solution():
     """"Validate input, evaluate sum, print result"""
     natural, x_val = 1, 9.2
-    if validate_values(natural, x_val):
+    if is_natural_and_float(natural, x_val):
         result = difficult_formula(int(natural), float(x_val))
         print(result)
     else:
