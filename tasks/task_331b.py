@@ -1,19 +1,16 @@
 """This module solves the task 331b from zadachi.pdf"""
 
 
-def func(numb):
+def func(numb: int) -> list:
     """
     Find all triples of natural numbers,
     whose sum of squares is equal to the numb.
 
-    Arg:
-        numb (int): any number.
+    :param numb: any number.
+    :return: contains tuples of the three natural numbers.
 
-    Return:
-        answer (list): contains tuples of the three natural numbers.
-
-    Example:
-        >>> print(func(100))
+    :Example:
+        >>> func(100)
         [(8, 6, 0), (10, 0, 0)]
     """
     answer = []

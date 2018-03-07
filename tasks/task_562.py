@@ -1,18 +1,15 @@
 """This module solves the task 562 from zadachi.pdf"""
 
 
-def split_into_digits(numb):
+def split_into_digits(numb: int) -> list:
     """
     Split the the number into digits.
 
-    Arg:
-        numb (int): any number.
+    :param numb: any number.
+    :return: contains digits of the numb.
 
-    Return:
-        answer (list): contains digits of the numb.
-
-    Example:
-        >>> print(split_into_digits(123))
+    :Example:
+        >>> split_into_digits(123)
         [1, 2, 3]
     """
     answer = []
@@ -27,15 +24,12 @@ def get_armstrong_numbs(start, end):
     Get all Armstrong numbers(PPDI)
     from given interval [start, end].
 
-    Args:
-        start (int): any number.
-        end (int): greater than start.
+    :param start: any number.
+    :param end: greater than start.
+    :return: contains Armstrong numbers.
 
-    Return:
-        answer (list): contains Armstrong numbers.
-
-    Example:
-        >>> print(get_armstrong_numbs(10, 999))
+    :Example:
+        >>> get_armstrong_numbs(10, 999)
         [153, 370, 371, 407]
     """
     answer = []

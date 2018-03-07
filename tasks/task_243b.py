@@ -1,19 +1,16 @@
 """This module solves the task 243b from zadachi.pdf"""
 
 
-def func(numb):
+def func(numb: int) -> list:
     """
     Find all pairs of natural numbers,
     whose sum of squares is equal to the numb.
 
-    Arg:
-        numb (int): any number.
+    :param numb: any number.
+    :return: contains tuples of pairs of the natural numbers.
 
-    Return:
-        answer (list): contains tuples of pairs of the natural numbers.
-
-    Example:
-        >>> print(func(100))
+    :Example:
+        >>> func(100)
         [(8, 6), (10, 0)]
     """
     answer = []

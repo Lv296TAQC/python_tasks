@@ -2,18 +2,15 @@
 from math import log10
 
 
-def swap_numb(numb):
+def swap_numb(numb: int) -> int:
     """
     Swap the first and the last digits of the number.
 
-    Arg:
-        numb (int): any number.
+    :param numb: any number.
+    :return: where the first and the last digits are swapped.
 
-    Return:
-        int, where the first and the last digits are swapped.
-
-    Example:
-        >>> print(swap_numb(1356))
+    :Example:
+        >>> swap_numb(1356)
         6351
     """
     rank = pow(10, int(log10(numb)))
