@@ -1,0 +1,232 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521566513211" stop="1521566513301">
+  <name>tests.pytests.test_task569</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521566513211" status="passed" stop="1521566513213">
+      <name>test_is_prime</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513214" status="passed" stop="1521566513215">
+      <name>test_is_prime_raises</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513216" status="passed" stop="1521566513217">
+      <name>test_prime_numbers[32-b0]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513218" status="passed" stop="1521566513220">
+      <name>test_prime_numbers[9-b1]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513221" status="failed" stop="1521566513279">
+      <name>test_prime_numbers_raises[123]</name>
+      <failure>
+        <message>TypeError: 'str' object cannot be interpreted as an integer</message>
+        <stack-trace>a = '123'
+
+    @pytest.mark.parametrize('a', [
+        ('123'),
+        ([123, 32])
+    ])
+    def test_prime_numbers_raises(a):
+&gt;       assert prime_numbers(a)
+
+test_task569.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number = '123'
+
+    def prime_numbers(number: int) -&gt; int:
+        """
+        Method checks the array of prime numbers from the range
+    
+        :param: Natural validated number from Input
+        :return: array of natural numbers
+    
+        :Example:
+    
+        In this example we'll have array of prime numbers
+    
+        ..doctest::
+    
+           &gt;&gt;&gt;print(prime_numbers(9)
+           [7]
+           &gt;&gt;&gt;print(prime_numbers(18))
+           [7, 11, 13, 17]
+        """
+    
+        array = []
+&gt;       for num in range(6, number):
+E       TypeError: 'str' object cannot be interpreted as an integer
+
+../../tasks/task_569.py:49: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513281" status="failed" stop="1521566513286">
+      <name>test_prime_numbers_raises[a1]</name>
+      <failure>
+        <message>TypeError: 'list' object cannot be interpreted as an integer</message>
+        <stack-trace>a = [123, 32]
+
+    @pytest.mark.parametrize('a', [
+        ('123'),
+        ([123, 32])
+    ])
+    def test_prime_numbers_raises(a):
+&gt;       assert prime_numbers(a)
+
+test_task569.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number = [123, 32]
+
+    def prime_numbers(number: int) -&gt; int:
+        """
+        Method checks the array of prime numbers from the range
+    
+        :param: Natural validated number from Input
+        :return: array of natural numbers
+    
+        :Example:
+    
+        In this example we'll have array of prime numbers
+    
+        ..doctest::
+    
+           &gt;&gt;&gt;print(prime_numbers(9)
+           [7]
+           &gt;&gt;&gt;print(prime_numbers(18))
+           [7, 11, 13, 17]
+        """
+    
+        array = []
+&gt;       for num in range(6, number):
+E       TypeError: 'list' object cannot be interpreted as an integer
+
+../../tasks/task_569.py:49: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513287" status="passed" stop="1521566513288">
+      <name>test_prime_numbers_raise</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513288" status="passed" stop="1521566513289">
+      <name>test_divide_by_prime</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513290" status="passed" stop="1521566513292">
+      <name>test_divide_by_prime_raise</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513293" status="passed" stop="1521566513294">
+      <name>test_validate</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513294" status="passed" stop="1521566513296">
+      <name>test_validate_raise</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513296" status="passed" stop="1521566513301">
+      <name>test_natural_numbers</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

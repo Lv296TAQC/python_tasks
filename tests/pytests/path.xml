@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="3" name="pytest" skips="0" tests="28" time="0.190"><testcase classname="test_task184" file="test_task184.py" line="4" name="test_update" time="0.0020461082458496094"></testcase><testcase classname="test_task184" file="test_task184.py" line="8" name="test_update_raise" time="0.0008838176727294922"></testcase><testcase classname="test_task242" file="test_task242.py" line="4" name="test_params[1-2.0]" time="0.002361297607421875"></testcase><testcase classname="test_task242" file="test_task242.py" line="4" name="test_params[4-1.375]" time="0.0011665821075439453"></testcase><testcase classname="test_task242" file="test_task242.py" line="4" name="test_params[7-1.3817460317460317]" time="0.0015769004821777344"></testcase><testcase classname="test_task242" file="test_task242.py" line="4" name="test_params[10-1.3817733134920636]" time="0.0019099712371826172"></testcase><testcase classname="test_task242" file="test_task242.py" line="14" name="test_params_raise[a0]" time="0.0014426708221435547"></testcase><testcase classname="test_task242" file="test_task242.py" line="14" name="test_params_raise[qwe]" time="0.0013446807861328125"></testcase><testcase classname="test_task242" file="test_task242.py" line="14" name="test_params_raise[a2]" time="0.0012340545654296875"></testcase><testcase classname="test_task569" file="test_task569.py" line="4" name="test_is_prime" time="0.0009393692016601562"></testcase><testcase classname="test_task569" file="test_task569.py" line="8" name="test_is_prime_raises" time="0.0010943412780761719"></testcase><testcase classname="test_task569" file="test_task569.py" line="13" name="test_prime_numbers[32-b0]" time="0.0020377635955810547"></testcase><testcase classname="test_task569" file="test_task569.py" line="13" name="test_prime_numbers[9-b1]" time="0.0012023448944091797"></testcase><testcase classname="test_task569" file="test_task569.py" line="21" name="test_prime_numbers_raises[123]" time="0.0012013912200927734"><failure message="TypeError: &apos;str&apos; object cannot be interpreted as an integer">a = &apos;123&apos;
+
+    @pytest.mark.parametrize(&apos;a&apos;, [
+        (&apos;123&apos;),
+        ([123, 32])
+    ])
+    def test_prime_numbers_raises(a):
+&gt;       assert prime_numbers(a)
+
+test_task569.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number = &apos;123&apos;
+
+    def prime_numbers(number: int) -&gt; int:
+        &quot;&quot;&quot;
+        Method checks the array of prime numbers from the range
+    
+        :param: Natural validated number from Input
+        :return: array of natural numbers
+    
+        :Example:
+    
+        In this example we&apos;ll have array of prime numbers
+    
+        ..doctest::
+    
+           &gt;&gt;&gt;print(prime_numbers(9)
+           [7]
+           &gt;&gt;&gt;print(prime_numbers(18))
+           [7, 11, 13, 17]
+        &quot;&quot;&quot;
+    
+        array = []
+&gt;       for num in range(6, number):
+E       TypeError: &apos;str&apos; object cannot be interpreted as an integer
+
+../../tasks/task_569.py:49: TypeError</failure></testcase><testcase classname="test_task569" file="test_task569.py" line="21" name="test_prime_numbers_raises[a1]" time="0.0010750293731689453"><failure message="TypeError: &apos;list&apos; object cannot be interpreted as an integer">a = [123, 32]
+
+    @pytest.mark.parametrize(&apos;a&apos;, [
+        (&apos;123&apos;),
+        ([123, 32])
+    ])
+    def test_prime_numbers_raises(a):
+&gt;       assert prime_numbers(a)
+
+test_task569.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+number = [123, 32]
+
+    def prime_numbers(number: int) -&gt; int:
+        &quot;&quot;&quot;
+        Method checks the array of prime numbers from the range
+    
+        :param: Natural validated number from Input
+        :return: array of natural numbers
+    
+        :Example:
+    
+        In this example we&apos;ll have array of prime numbers
+    
+        ..doctest::
+    
+           &gt;&gt;&gt;print(prime_numbers(9)
+           [7]
+           &gt;&gt;&gt;print(prime_numbers(18))
+           [7, 11, 13, 17]
+        &quot;&quot;&quot;
+    
+        array = []
+&gt;       for num in range(6, number):
+E       TypeError: &apos;list&apos; object cannot be interpreted as an integer
+
+../../tasks/task_569.py:49: TypeError</failure></testcase><testcase classname="test_task569" file="test_task569.py" line="29" name="test_prime_numbers_raise" time="0.0008757114410400391"></testcase><testcase classname="test_task569" file="test_task569.py" line="34" name="test_divide_by_prime" time="0.0010075569152832031"></testcase><testcase classname="test_task569" file="test_task569.py" line="38" name="test_divide_by_prime_raise" time="0.0008420944213867188"></testcase><testcase classname="test_task569" file="test_task569.py" line="43" name="test_validate" time="0.0007350444793701172"></testcase><testcase classname="test_task569" file="test_task569.py" line="47" name="test_validate_raise" time="0.0009596347808837891"></testcase><testcase classname="test_task569" file="test_task569.py" line="52" name="test_natural_numbers" time="0.004055023193359375"></testcase><testcase classname="test_task86g" file="test_task86g.py" line="10" name="test_total_sum[133-1]" time="0.0012967586517333984"></testcase><testcase classname="test_task86g" file="test_task86g.py" line="10" name="test_total_sum[6563-4]" time="0.0011203289031982422"></testcase><testcase classname="test_task86g" file="test_task86g.py" line="18" name="test_total_sum_error1[-2]" time="0.0011930465698242188"></testcase><testcase classname="test_task86g" file="test_task86g.py" line="18" name="test_total_sum_error1[ad]" time="0.0013623237609863281"></testcase><testcase classname="test_task86g" file="test_task86g.py" line="18" name="test_total_sum_error1[a2]" time="0.0013320446014404297"></testcase><testcase classname="test_task86g" file="test_task86g.py" line="28" name="test_logging" time="0.00165557861328125"><failure message="assert 1 == 2
+ +  where 1 = total_sum1(133)">def test_logging():
+&gt;       assert total_sum1(133) == 2
+E       assert 1 == 2
+E        +  where 1 = total_sum1(133)
+
+test_task86g.py:30: AssertionError</failure></testcase><testcase classname="test_task86g" file="test_task86g.py" line="35" name="test_total_sum_error2" time="0.000965118408203125"><system-out>Test passed
+</system-out></testcase></testsuite>

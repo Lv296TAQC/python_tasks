@@ -5,12 +5,13 @@ def natural_number(n_number, m_number):
     """
     Get the sum of the last digits of the number n.
 
-    Arg:
-       n_number(int): any natural number
-       m_number(int): any natural number
+    :param n_number: any natural number
+    :param m_number: any natural number
+    :return: int, which return last digits of the number.
 
-    Return:
-        int, where the last digits are sum
+    ..doctest:
+    >>>print(natural_number(21,12))
+    3
     """
     counter = 0
     while m_number > 0:
@@ -18,7 +19,3 @@ def natural_number(n_number, m_number):
         n_number //= 10
         m_number -= 1
     return counter
-
-
-if __name__ == "__main__":
-    print('Last digits of the number n: ', natural_number(2322, 2))

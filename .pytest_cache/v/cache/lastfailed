@@ -1,0 +1,4 @@
+{
+  "test_sel.py::WebKitFeatureStatusTest::test_feature_status_page_filters": true,
+  "test_sel.py::WebKitFeatureStatusTest::test_feature_status_page_search": true
+}

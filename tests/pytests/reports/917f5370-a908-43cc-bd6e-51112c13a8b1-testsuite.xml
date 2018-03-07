@@ -1,0 +1,30 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521566513174" stop="1521566513182">
+  <name>tests.pytests.test_task184</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521566513174" status="passed" stop="1521566513179">
+      <name>test_update</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513181" status="passed" stop="1521566513182">
+      <name>test_update_raise</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

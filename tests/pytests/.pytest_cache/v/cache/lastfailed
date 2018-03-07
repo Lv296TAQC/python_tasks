@@ -1,0 +1,21 @@
+{
+  "test_task242.py::test_00_task_88[params_test0]": true,
+  "test_task242.py::test_00_task_88[params_test1]": true,
+  "test_task242.py::test_00_task_88[params_test2]": true,
+  "test_task242.py::test_00_task_88[params_test3]": true,
+  "test_task242.py::test_params_raise[-2]": true,
+  "test_task242.py::test_total_sum": true,
+  "test_task569.py::test_is_prime[-7]": true,
+  "test_task569.py::test_is_prime[0]": true,
+  "test_task569.py::test_is_prime[7.0]": true,
+  "test_task569.py::test_is_prime_raises[-7]": true,
+  "test_task569.py::test_is_prime_raises[0]": true,
+  "test_task569.py::test_natural_numbers_raise": true,
+  "test_task569.py::test_prime_numbers": true,
+  "test_task569.py::test_prime_numbers_raises": true,
+  "test_task569.py::test_prime_numbers_raises[123]": true,
+  "test_task569.py::test_prime_numbers_raises[a1]": true,
+  "test_task86g.py::test_logging": true,
+  "test_task86g.py::test_raise": true,
+  "test_task86g.py::test_total_sum_error1[23]": true
+}

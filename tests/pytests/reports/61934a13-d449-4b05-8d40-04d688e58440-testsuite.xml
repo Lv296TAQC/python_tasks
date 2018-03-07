@@ -1,0 +1,102 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521566513302" stop="1521566513323">
+  <name>tests.pytests.test_task86g</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521566513302" status="passed" stop="1521566513304">
+      <name>test_total_sum[133-1]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513305" status="passed" stop="1521566513306">
+      <name>test_total_sum[6563-4]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513307" status="passed" stop="1521566513309">
+      <name>test_total_sum_error1[-2]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513310" status="passed" stop="1521566513311">
+      <name>test_total_sum_error1[ad]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513312" status="passed" stop="1521566513313">
+      <name>test_total_sum_error1[a2]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513314" status="failed" stop="1521566513320">
+      <name>test_logging</name>
+      <failure>
+        <message>AssertionError: assert 1 == 2
+ +  where 1 = total_sum1(133)</message>
+        <stack-trace>def test_logging():
+&gt;       assert total_sum1(133) == 2
+E       assert 1 == 2
+E        +  where 1 = total_sum1(133)
+
+test_task86g.py:30: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513322" status="passed" stop="1521566513323">
+      <name>test_total_sum_error2</name>
+      <attachments>
+        <attachment source="3a52ca8c-2f0d-4ae9-b2b0-7b058fe4a251-attachment.txt" title="Captured stdout call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

@@ -5,12 +5,13 @@ def common_multiple(n_number, m_number):
     """
     Get all their natural common multiples, smaller mn
 
-    Arg:
-        n_number(int): any natural number
-        m_number(int): any natural number
+    :param n_number: any natural number
+    :param m_number: any natural number
+    :return: list, which returns common multiples, smaller mn
 
-    Return:
-        list, which returns common multiples, smaller mn
+    ..doctest:
+    >>>print(common_multiple(32,2))
+    [32]
     """
 
     counter = []
@@ -18,7 +19,3 @@ def common_multiple(n_number, m_number):
         if i % m_number == 0 and i % n_number == 0:
             counter.append(i)
     return counter
-
-
-if __name__ == '__main__':
-    print("Common multiple: " + str(common_multiple(12, 22)))

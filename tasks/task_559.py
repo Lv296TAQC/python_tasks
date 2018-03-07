@@ -1,43 +1,60 @@
 """This module solves the task 559 from zadachi.pdf"""
 
-from math import sqrt
 
-RANGE_PRIME_NUMBERS = 48
-
-
-def prime_number():
+def is_prime_number(check_number):
     """
-    Find all smaller numbers of Mersenne numbers
+    Сheck whether the number is simple
 
-    Args:
-        n_number(int): any natural number
+    :param check_number: any natural number
+    :return:  boolean value(True or False)
 
-    Return:
-        list, which returns a simple mercenary number that
-        is less than the entered number in the input field
+    ..doctest:
+    >>>print(is_prime_number(7))
+    True
     """
-    generated_number = [2]
-    for k in range(3, RANGE_PRIME_NUMBERS + 1, 2):
-        if k > 10 and k % 10 == 5:
-            continue
-        for j in generated_number:
-            if j > int((sqrt(k)) + 1):
-                generated_number.append(k)
-                break
-            if k % j == 0:
-                break
-        else:
-            generated_number.append(k)
-    return generated_number
+
+    for i in range(2, check_number):
+        if (check_number % i) == 0:
+            return False
+    return True
 
 
-if __name__ == '__main__':
-    LIST_OF_NUMBERS = []
-    INPUT_N = input('Enter n: ')
-    for i in prime_number():
-        temp = 2 ** i - 1
-        if temp < int(INPUT_N):
-            LIST_OF_NUMBERS.append(temp)
+def return_prime_number(limit_number):
+    """
+    Output a simple number found by the function is_prime_number
+
+    :param limit_number: any natural number
+    :return: list, which returns prime numbers
+
+    ..doctest:
+    >>>print(return_prime_number(20))
+    [2, 3, 5, 7, 11, 13, 17, 19]
+    """
+
+    list_of_number = []
+    for counter_number in range(2, limit_number):
+        if is_prime_number(counter_number):
+            list_of_number.append(counter_number)
+    return list_of_number
+
+
+def number_of_mercenn(limit_number):
+    """
+    Find all smaller numbers of Mersenne.
+
+    :param limit_number: any natural number
+    :return: list, which return prime number of Mercenns
+
+    ..doctest:
+    >>>print(number_of_mercenn(50))
+    [3, 7, 31]
+    """
+
+    list_of_mercenne_number = []
+    for p_number in return_prime_number(limit_number):
+        formula_of_number_marcenne = 2 ** p_number - 1
+        if formula_of_number_marcenne < limit_number:
+            list_of_mercenne_number.append(formula_of_number_marcenne)
         else:
             break
-    print(LIST_OF_NUMBERS)
+    return list_of_mercenne_number

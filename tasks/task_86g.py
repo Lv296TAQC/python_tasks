@@ -1,4 +1,6 @@
 """Finding interchangeable sum of digits n"""
+
+
 def total_sum1(number):
     """Method finding total_sum"""
     array = [int(d) for d in str(number)]
@@ -8,5 +10,4 @@ def total_sum1(number):
             sum1 += element
         else:
             sum1 -= element
-
     return sum1

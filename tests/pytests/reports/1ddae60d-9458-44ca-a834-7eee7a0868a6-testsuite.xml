@@ -1,0 +1,90 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521566513183" stop="1521566513209">
+  <name>tests.pytests.test_task242</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521566513183" status="passed" stop="1521566513187">
+      <name>test_params[1-2.0]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513189" status="passed" stop="1521566513192">
+      <name>test_params[4-1.375]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513193" status="passed" stop="1521566513195">
+      <name>test_params[7-1.3817460317460317]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513196" status="passed" stop="1521566513198">
+      <name>test_params[10-1.3817733134920636]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513199" status="passed" stop="1521566513201">
+      <name>test_params_raise[a0]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513202" status="passed" stop="1521566513205">
+      <name>test_params_raise[qwe]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521566513206" status="passed" stop="1521566513209">
+      <name>test_params_raise[a2]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="21010-MainThread"/>
+        <label name="host" value="Yuras-MacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
