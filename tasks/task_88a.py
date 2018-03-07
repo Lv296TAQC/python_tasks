@@ -8,8 +8,8 @@ def task88a(from_input: int) -> bool:
     Return True if there is '3' in 'check' variable.
     Return False if there is '3' in 'check' variable.
 
-    :param int from_input: Incoming value.
-    :return bool: True if there is digit 3 in powered input value,
+    :param from_input: Incoming value.
+    :return: True if there is digit 3 in powered input value,
         False if there is no digit 3 in powered input value.
     """
     from_input = from_input ** 2

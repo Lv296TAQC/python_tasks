@@ -6,8 +6,8 @@ def task224(from_input: int) -> list:
     """
     Take input natural number and search for all it's natural dividers.
 
-    :param int from_input: Incoming value.
-    :return list result: Return list of all natural dividers.
+    :param from_input: Incoming value.
+    :return: Return list of all natural dividers.
     """
     result = []
     for try_natural in range(1, from_input + 1):

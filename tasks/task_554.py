@@ -7,8 +7,8 @@ def task554(from_input: int) -> dict:
     Take input natural number and search for all it's Pythagorean triples,
     that like 'a < b < c < input natural number'.
 
-    :param int from_input: Incoming value.
-    :return dict result: Return dict with all Pythagorean triples.
+    :param from_input: Incoming value.
+    :return: Return dict with all Pythagorean triples.
     """
     key = 1
     result = {}
