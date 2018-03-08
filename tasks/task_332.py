@@ -1,17 +1,23 @@
 """"Equate lagrange's theorem for given number"""
 
-from tasks.task_88d import validate
+from tasks.task_88d import is_natural
 
 
-def lagrange(natural):
+def lagrange(natural: int) -> tuple:
     """"Find needed squares of numbers
 
-    Args:
-        natural (int): Any integer (natural) number
+    :param natural: Any integer (natural) number
+    :return:  Tuple of integers, which sum of squares is equals to given natural
 
-    Returns:
-        tuple: Tuple of integers, which sum of squares is equals to given natural
+    :Example:
 
+    In this example tuple (3, 3, 2, 1) of natural numbers will be returned as 4 numbers, sum
+        of squares of which is equal to number 23
+
+    .. doctest::
+
+        >>> print(lagrange(23))
+        (3, 3, 2, 1)
     """
     natural_copy = natural
     x_val = int(natural_copy ** 0.5)
@@ -30,9 +36,9 @@ def lagrange(natural):
 
 
 def print_solution():
-    """"Validate input, find each square of lagrange's theorem, print result"""
+    """"Validate input, find each square of lagrange's theorem, print result."""
     natural = 188
-    if validate(natural):
+    if is_natural(natural):
         combination = lagrange(int(natural))
         print(f"{natural} =", end='')
         for i, value in enumerate(combination):
