@@ -100,7 +100,7 @@ class TestsTask562(TestCase):
         self.assertRaises(ValueError, get_armstrong_numbs, -1000, 1000)
 
     @patch('tasks.task_562.split_into_digits', return_value=[4, 0, 7])
-    def test_get_armstrong_fourth(self, split_into_digits):    # pylint: disable=W0621
+    def test_get_armstrong_fourth(self, split_into_digits):
         """Check if expected results correspond to actual with a specific input, which isn't
         intended to change result hence mocked function split_into_digits"""
         left = 10

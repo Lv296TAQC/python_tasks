@@ -58,7 +58,7 @@ class TestsTask88c(TestCase):
 
     def test_swap_numb_third_a(self):
         """Test to check if expected Error raises when input is not valid"""
-        self.assertRaises(ValueError, func, dict())
+        self.assertRaises(TypeError, func, dict())
 
     def test_swap_numb_third_b(self):
         """Test to check if expected Error raises when input is not valid"""
@@ -70,8 +70,8 @@ class TestsTask88c(TestCase):
 
     def test_swap_numb_third_d(self):
         """Test to check if expected Error raises when input is not valid"""
-        self.assertRaises(ValueError, func, ["a", "b"])
+        self.assertRaises(TypeError, func, ["a", "b"])
 
     def test_swap_numb_third_e(self):
         """Test to check if expected Error raises when input is not valid"""
-        self.assertRaises(ValueError, func, [0, -19])
+        self.assertRaises(TypeError, func, [0, -19])
