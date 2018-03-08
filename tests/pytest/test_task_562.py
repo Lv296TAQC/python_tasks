@@ -110,5 +110,5 @@ def test_get_armstrong_fourth(, split_into_digits):  # pylint: disable=W0621
     left = 10
     right = 9999
     res = get_armstrong_numbs(left, right)
-    assert split_into_digits(407), [4, 0, 7])
-    assert res, [407])
+    assert split_into_digits(407) == [4, 0, 7]
+    assert res == [407]

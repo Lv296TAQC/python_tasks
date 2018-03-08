@@ -37,40 +37,38 @@ def test_func_second_a():
     """Test to check if input and output types of values corresponds to
     intended, according to the function docstrings.
     """
-    int_ = 50
-    func(int_)
-    assertIsInstance(int_, int)
-
-
-def test_func_second_b():
-    """Test to check if input and output types of values corresponds to
-    intended, according to the function docstrings.
-    """
-    int_ = 50
-    res = func(int_)
-    assertIsInstance(res, list)
+    assert type(func(50)) == int
+    assert isinstance(func(50), int)
+    numb = 50
+    assert type(numb) == int
+    assert isinstance(func(numb), int)
 
 
 def test_func_third_a():
     """Test to check if expected Error raises when input is not valid"""
-    assertRaises(TypeError, func, "1e1")
+    with pytest.raises(TypeError):
+        func("1e1")
 
 
 def test_func_third_b():
     """Test to check if expected Error raises when input is not valid"""
-    assertRaises(TypeError, func, [complex(1, 2)])
+    with pytest.raises(TypeError):
+        func([complex(1, 2)])
 
 
 def test_func_third_c():
     """Test to check if expected Error raises when input is not valid"""
-    assertRaises(TypeError, func, (0, 0, 0))
+    with pytest.raises(TypeError):
+        func((0, 0, 0))
 
 
 def test_func_third_d():
     """Test to check if expected Error raises when input is not valid"""
-    assertRaises(ValueError, func, 0)
+    with pytest.raises(ValueError):
+        func(0)
 
 
 def test_func_third_e():
     """Test to check if expected Error raises when input is not valid"""
-    assertRaises(ValueError, func, -1)
+    with pytest.raises(ValueError):
+        func(-1)

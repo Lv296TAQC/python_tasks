@@ -36,14 +36,7 @@ def test_swap_numb_second_a():
     """
     assert type(swap_numb(543)) == int
     assert isinstance(swap_numb(543), int)
-
-
-def test_swap_numb_second_b():
-    """Test to check if input and output types of values correspond to
-    intended, according to the function docstrings.
-    """
     numb = 543
-    swap_numb(numb)
     assert type(numb) == int
     assert isinstance(swap_numb(numb), int)
 
