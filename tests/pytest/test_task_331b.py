@@ -1,6 +1,6 @@
 """"Test for task4_331b"""
 
-from unittest import TestCase
+import pytest
 
 from tasks.task_331b import func
 

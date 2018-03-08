@@ -1,6 +1,6 @@
 """"Test for task1_88c"""
 
-from unittest import TestCase
+import pytest
 
 from tasks.task_88c import swap_numb
 

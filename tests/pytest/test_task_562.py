@@ -1,8 +1,7 @@
 """"Test for task5_562"""
 
 
-from unittest import TestCase
-from unittest.mock import patch
+import pytest
 
 from tasks.task_562 import split_into_digits, get_armstrong_numbs
 
