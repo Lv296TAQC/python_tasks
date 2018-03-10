@@ -2,18 +2,15 @@
 from math import factorial
 
 
-def func(arr):
+def func(arr: list) -> int:
     """
     Count the elements satisfying the condition: (2^k < ak < k!).
 
-    Arg:
-        arr (list): contains numbers.
+    :param arr: contains numbers.
+    :return: number appropriate elements.
 
-    Return:
-        count (int): number appropriate elements.
-
-    Example:
-        >>> print(func([0, 0, 1, 6, 23, 33])
+    :Example:
+        >>> func([0, 0, 1, 6, 23, 33])
         2
     """
     count = 0
