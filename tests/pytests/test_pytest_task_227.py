@@ -2,16 +2,31 @@ import pytest
 from tasks.task_227 import comparison, divisor
 
 
-def test_task_227_comparison():
+def test_01_task_227_comparison():
     assert comparison(18, 6) == [-6, -3, -2, -1, 1, 2, 3, 6]
+
+
+def test_02_task_227_comparison():
     with pytest.raises(TypeError):
         comparison('abc', 2)
+
+
+def test_03_task_227_comparison():
     with pytest.raises(TypeError):
         comparison(3, {})
+
+
+def test_04_task_227_comparison():
     with pytest.raises(TypeError):
         comparison(8, None)
+
+
+def test_05_task_227_comparison():
     with pytest.raises(TypeError):
         comparison(None, None)
+
+
+def test_06_task_227_comparison():
     with pytest.raises(TypeError):
         comparison(5, [])
 

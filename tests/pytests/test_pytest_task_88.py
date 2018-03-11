@@ -3,10 +3,10 @@ from tasks.task_88 import three_go_in
 
 
 @pytest.fixture(scope="module", autouse=False, params=[
-                (19, True),
-                (191, True),
-                (6, True)
-                ])
+    (19, True),
+    (191, True),
+    (6, True)
+    ])
 def param_test(request):
     return request.param
 
