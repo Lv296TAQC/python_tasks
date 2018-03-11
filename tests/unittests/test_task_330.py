@@ -5,7 +5,7 @@ from tasks.task_330 import minus_last, ideal
 
 class TestsTask330(unittest.TestCase):
 
-    @patch('tasks.task_227.divisor', return_value=[1, -1, 2, -2, 3, -3, 6, -6])
+    @patch('tasks.task_227.divisor', return_value=[1, 2, 3, 6])
     def test_third_330_minus_last(self, divisor):
         self.assertEqual(6, minus_last(6))
         self.assertRaises(TypeError, minus_last, 'opa4a')
