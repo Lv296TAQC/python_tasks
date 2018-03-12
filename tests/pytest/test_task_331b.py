@@ -44,37 +44,28 @@ def test_func_second_a():
     assert isinstance(func(numb), int)
 
 
-def test_func_second_b():
-    """Test to check if input and output types of values corresponds to
-    intended, according to the function docstrings.
-    """
-    integer = 100
-    res = func(integer)
-    assertIsInstance(res, list)
-
-
 def test_func_third_a():
     """Test to check if expected Error raises when input is not valid"""
     with pytest.raises(TypeError):
-        func(func, "Zero")
+        func("Zero")
 
 
 def test_func_third_b():
     """Test to check if expected Error raises when input is not valid"""
     with pytest.raises(TypeError):
-        func(func, [1, 2, 3])
+        func([1, 2, 3])
 
 
 def test_func_third_c():
     """Test to check if expected Error raises when input is not valid"""
     with pytest.raises(TypeError):
-        func(func, (1, 2, 0))
+        func((1, 2, 0))
 
 
 def test_func_third_d():
     """Test to check if expected Error raises when input is not valid"""
     with pytest.raises(TypeError):
-        func(func, -7e5)
+        func(-7e5)
 
 
 def test_func_third_e():
