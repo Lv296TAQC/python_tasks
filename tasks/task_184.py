@@ -3,17 +3,21 @@ In the sequence replace with zeros members, which absolute/p gives the reminder 
 """
 
 
-def update(number_p, number_q, sequence):
+def update(number_p, number_q, sequence: int) -> int:
     """
     Method replace with zeros members, which absolute/p gives the reminder q
 
-    Arg:
-        int numbers, sequence
-    Return:
-        sequence of numbers
-    Example:
-        print(update(2, 1, [3 , 4])) --> [0, 4]
-        print(update(1, 2, [5, 4])) --> incorrect values
+    :param: Natural validated number from Input, sequence
+    :return: sequence of numbers
+
+    :Example:
+
+    ..doctest::
+
+        >>>print(update(2, 1, [3 , 4]))
+        [0, 4]
+        >>>print(update(1, 2, [5 , 4]))
+        incorrect values
     """
     if (number_p <= number_q) or (number_q < 0):
         return 'incorrect values'

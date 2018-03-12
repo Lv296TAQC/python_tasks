@@ -3,16 +3,19 @@
 import math
 
 
-def total_sum(number_n):
+def total_sum(number_n: int) -> int:
     """
     Method for calculating the total sum in the range
 
-    Arg:
-        natural number n
-    Return:
-        sum from k to n of the expression
+    :param: Natural validated number from Input
+    :return: sum from k to n of the expression
+
     Example:
-        print(total_sum(2)) --> 1.5
+
+    ..doctest::
+
+        >>>print(total_sum(2))
+        1.5
     """
     sum1 = 0
     for k in range(number_n+1):
