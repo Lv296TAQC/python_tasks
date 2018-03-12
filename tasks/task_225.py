@@ -1,17 +1,16 @@
 """"This module solves the task 225."""
 
 
-def func3(number):
-    """"
+def func3(number: int) -> list:
+    """
     Take a natural number and return the list of numbers,
      where entered number is divisible by q**2 and not divisible by q**3.
 
-    Args:
-        number (int): any natural number
+    :param number: Any natural number.
+    :return mylist: List of all numbers divisible by q**2 and not divisible by q**3.
 
-    Returns:
-        mylist (list): list of all numbers divisible by q**2 and not divisible by q**3
-
+    >>> func3(100)
+    [2, 5, 10]
     """
     q_number = 1
     mylist = []

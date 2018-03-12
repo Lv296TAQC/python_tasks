@@ -1,6 +1,5 @@
 import unittest
-from task_568 import find_subset, single_solution
-from tasks.task_88d import validate
+from tasks.task_568 import find_subset, single_solution
 
 
 class TestsTask568(unittest.TestCase):
@@ -26,7 +25,3 @@ class TestsTask568(unittest.TestCase):
                 self.assertEqual(single_solution('qwerty'), 'Invalid input. Please write correct natural number')
                 self.assertEqual(single_solution(-794), 'Invalid input. Please write correct natural number')
                 self.assertEqual(single_solution(123456), 'No possible solutions')
-
-
-# if __name__ == '__main__':
-#     unittest.main()

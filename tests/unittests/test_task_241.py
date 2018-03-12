@@ -1,5 +1,5 @@
 import unittest
-from task_241 import difficult_formula, validate_values
+from tasks.task_241 import difficult_formula, validate_values
 
 
 class TestsTask241(unittest.TestCase):
@@ -12,10 +12,8 @@ class TestsTask241(unittest.TestCase):
 
     def test_validate_values(self):
         self.assertTrue(validate_values(32, 34.5))
+        self.assertFalse(validate_values(-32, 'qwerty'))
 
-    @unittest.expectedFailure
     def test_validate_values_for_errors(self):
-        self.assertRaises((TypeError, ValueError), validate_values, -1, 'qwerty')
-#
-# if __name__ == '__main__':
-#     unittest.main()
+        self.assertRaises(TypeError, validate_values)
+        self.assertRaises(TypeError, validate_values, 1)

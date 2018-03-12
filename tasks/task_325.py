@@ -1,16 +1,15 @@
 """"This module solves the task 325."""
 
 
-def func4(number):
-    """"
+def func4(number: int) -> list:
+    """
     Take natural number and return all simple divisors of entered number.
 
-    Args:
-        number (int): any natural number
+    :param number: Any natural number.
+    :return mylist: List of all simple divisors of entered number.
 
-    Returns:
-        mylist (list): list of all simple divisors of entered number
-
+    >>> func4(100)
+    [2, 2, 5, 5]
     """
     i = 2
     mylist = []
