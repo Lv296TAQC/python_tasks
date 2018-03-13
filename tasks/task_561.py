@@ -12,6 +12,10 @@ def squares_of_numbers(value: int) -> List[str]:
 
     :param value: The number that more or equal 0.
     :return: List of strings.
+    :Example:
+
+    >>> squares_of_numbers(17)
+    ['1^2 = 1', '5^2 = 25', '6^2 = 36']
     """
 
     result = []
@@ -39,4 +43,6 @@ def main():
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
     main()

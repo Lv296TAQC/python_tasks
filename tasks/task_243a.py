@@ -12,6 +12,13 @@ def sum_of_two_squares(number: int) -> Union[bool, Tuple[int, int]]:
 
     :param number: The number that more or equal 0.
     :return: Tuple with two numbers if successful, False otherwise.
+    :Examples:
+
+    >>> sum_of_two_squares(45)
+    (3, 6)
+
+    >>>sum_of_two_squares(44)
+    False
     """
 
     first = 1
@@ -43,4 +50,6 @@ def main():
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
     main()

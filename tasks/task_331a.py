@@ -12,6 +12,13 @@ def sum_of_three_squares(number: int) -> Union[bool, Tuple[int, int, int]]:
 
     :param number: The number that more or equal 0.
     :return: Tuple with three numbers if successful, False otherwise.
+    :Examples:
+
+    >>> sum_of_three_squares(57)
+    (2, 2, 7)
+
+    >>> sum_of_three_squares(20)
+    False
     """
 
     value_one = 1
@@ -49,4 +56,6 @@ def main():
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
     main()

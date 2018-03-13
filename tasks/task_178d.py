@@ -13,6 +13,10 @@ def task_function(numbers: List[int]) -> int:
     :param numbers: List of int numbers.
     :return: Count of numbers that are less than
              the sum of the previous and next numbers divided by 2.
+    :Example:
+
+    >>> task_function([1, 2, 8, 25])
+    2
     """
 
     count = 0
@@ -33,4 +37,6 @@ def main():
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
     main()

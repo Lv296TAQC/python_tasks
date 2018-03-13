@@ -11,6 +11,10 @@ def reverse_int(number: int) -> int:
 
     :param number: The number that more or equal 0.
     :return: Reversed number.
+    :Example:
+
+    >>> reverse_int(123)
+    321
     """
 
     return int(str(number)[::-1])
@@ -33,4 +37,6 @@ def main():
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
     main()
