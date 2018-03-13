@@ -25,7 +25,7 @@ def test_sum_with_str():
 ])
 def test_with_incorrect_type(arg):
     with pytest.raises(TypeError):
-        func3(input)
+        func3(arg)
 
 
 @pytest.mark.parametrize("arg", [
