@@ -24,4 +24,4 @@ def test_with_negative_number():
 ])
 def test_with_incorrect_type(arg):
     with pytest.raises(TypeError):
-        func4(input)
+        func4(arg)

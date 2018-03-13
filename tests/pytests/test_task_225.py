@@ -33,4 +33,4 @@ def test_with_incorrect_type(arg):
 ])
 def test_with_incorrect_empty_type(arg):
     with pytest.raises(TypeError):
-        func3(input)
+        func3(arg)

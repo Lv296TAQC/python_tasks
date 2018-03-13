@@ -44,7 +44,7 @@ def test_with_several_args():
 ])
 def test_with_incorrect_empty_type(arg):
     with pytest.raises(ValueError):
-        sum_of_digits(input)
+        sum_of_digits(arg)
 
 
 @pytest.mark.parametrize("value", [
@@ -52,4 +52,4 @@ def test_with_incorrect_empty_type(arg):
 ])
 def test_with_incorrect_empty_type(value):
     with pytest.raises(ValueError):
-        sum_of_digits(input)
+        sum_of_digits(value)
