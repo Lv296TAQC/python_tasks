@@ -1,5 +1,5 @@
 import unittest
-from task.task_555 import triagle
+from tasks.task_555 import triagle
 
 
 class TestTask555(unittest.TestCase):

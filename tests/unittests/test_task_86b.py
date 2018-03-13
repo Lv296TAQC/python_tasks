@@ -1,5 +1,5 @@
 import unittest
-from task.task_86b import sum_of_digits
+from tasks.task_86b import sum_of_digits
 
 class TestTask86b(unittest.TestCase):
 

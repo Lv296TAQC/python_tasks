@@ -1,5 +1,5 @@
 import pytest
-from task.task_325 import func4
+from tasks.task_325 import func4
 
 
 @pytest.mark.parametrize("input, expected", [

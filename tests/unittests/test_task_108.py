@@ -1,5 +1,5 @@
 import unittest
-from task.task_108 import func2
+from tasks.task_108 import func2
 
 
 class TestTask108(unittest.TestCase):

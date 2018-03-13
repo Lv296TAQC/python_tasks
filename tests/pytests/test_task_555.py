@@ -1,5 +1,5 @@
 import pytest
-from task.task_555 import triagle
+from tasks.task_555 import triagle
 
 
 @pytest.mark.parametrize("input, expected", [

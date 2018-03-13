@@ -1,5 +1,5 @@
 import pytest
-from task.task_86b import sum_of_digits
+from tasks.task_86b import sum_of_digits
 
 
 @pytest.mark.parametrize("input, expected", [
