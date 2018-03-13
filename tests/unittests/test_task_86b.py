@@ -1,6 +1,7 @@
 import unittest
 from tasks.task_86b import sum_of_digits
 
+
 class TestTask86b(unittest.TestCase):
 
     def test_sum_of_digits(self):
@@ -35,6 +36,7 @@ class TestTask86b(unittest.TestCase):
 
     def test_with_float(self):
         self.assertRaises(ValueError, sum_of_digits, 5.5)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -16,7 +16,7 @@ def test_with_zero():
 
 
 def test_with_negative_number():
-        assert func4(-100) == []
+    assert func4(-100) == []
 
 
 @pytest.mark.parametrize("arg", [

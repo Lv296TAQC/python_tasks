@@ -32,6 +32,5 @@ class TestTask325(unittest.TestCase):
         self.assertRaises(TypeError, func4, {1: 2})
 
 
-
 if __name__ == '__main__':
     unittest.main()
