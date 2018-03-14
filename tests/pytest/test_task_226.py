@@ -6,7 +6,7 @@ from tasks.task_226 import common_multiple
     (12, 22, 132),
     (1, 1, 1)
 ])
-def test_normal_args(a, b, c):
+def test_common_multiple_suitable_args(a, b, c):
     assert common_multiple(a, b) == c
 
 
@@ -14,7 +14,7 @@ def test_normal_args(a, b, c):
     (-134, 2),
     (12, -1)
 ])
-def test_negative_args(a, b):
+def test_common_multiple_unsuitable_args(a, b):
     with pytest.raises(ValueError):
         common_multiple(a, b)
 
@@ -25,6 +25,6 @@ def test_negative_args(a, b):
     (8569, ''),
     (8569, '3')
 ])
-def test_str_args(a, b):
+def test_common_multiple_str_args(a, b):
     with pytest.raises(TypeError):
         common_multiple(a, b)

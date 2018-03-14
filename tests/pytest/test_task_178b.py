@@ -7,14 +7,11 @@ from tasks.task_178_b import multiple_numbers
     ([-110, 5, 78], 0),
     ([1, 8, 6, 1, 5, 78], 1)
 ])
-def test_normal_args(a, b):
+def test_multiple_numbers_suitable_args(a, b):
     assert multiple_numbers(a) == b
 
 
-@pytest.mark.parametrize('a', [
-    (''),
-    ('58, -64, 9, 11')
-])
-def test_str_arg(a):
+@pytest.mark.parametrize('a', ['', '58, -64, 9, 11'])
+def test_multiple_numbers_str_arg(a):
     with pytest.raises(TypeError):
         multiple_numbers(a)

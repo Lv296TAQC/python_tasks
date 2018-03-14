@@ -10,51 +10,45 @@ def test_is_10_not_prime_number():
     assert not is_prime_number(10)
 
 
-def test_is_prime_number_negative_arg():
+@pytest.mark.parametrize('a', [-7, 0, 2.0])
+def test_is_prime_number_unsuitable_arg(a):
     with pytest.raises(ValueError):
-        is_prime_number(-7)
+        is_prime_number(a)
 
 
-@pytest.mark.parametrize('a', [
-    ('25'),
-    ('hhg')
-])
+@pytest.mark.parametrize('a', ['25', 'hhg', ''])
 def test_is_prime_number_str_arg(a):
     with pytest.raises(TypeError):
         is_prime_number(a)
 
 
-def test_return_prime_number_normal_arg():
+def test_return_prime_number_suitable_arg():
     assert return_prime_number(6) == [1, 2, 3, 5]
 
 
-def test_return_prime_number_negative_arg():
+@pytest.mark.parametrize('a', [-12, 1.0])
+def test_return_prime_number_unsuitable_arg(a):
     with pytest.raises(ValueError):
-        return_prime_number(-12)
+        return_prime_number(a)
 
 
-@pytest.mark.parametrize('a', [
-    ('6'),
-    ('2#6')
-])
+@pytest.mark.parametrize('a', ['6', '2#6'])
 def test_return_prime_number_str_arg(a):
     with pytest.raises(TypeError):
         return_prime_number(a)
 
 
-def test_number_of_mercenn_normal_arg():
+def test_number_of_mercenn_suitable_arg():
     assert return_prime_number(10) == [3, 7]
 
 
-def test_number_of_mercenn_negative_arg():
+@pytest.mark.parametrize('a', [-142, 10.5])
+def test_number_of_mercenn_unsuitable_arg(a):
     with pytest.raises(ValueError):
-        return_prime_number(-142)
+        return_prime_number(a)
 
 
-@pytest.mark.parametrize('a', [
-    ('788'),
-    ('sd8')
-])
+@pytest.mark.parametrize('a', ['788', 'sd8'])
 def test_number_of_mercenn_str_arg(a):
     with pytest.raises(TypeError):
         return_prime_number(a)
