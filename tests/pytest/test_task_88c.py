@@ -34,7 +34,7 @@ def test_swap_numb_second_a():
     """Test to check if input and output types of values correspond to
     intended, according to the function docstrings.
     """
-    assert type(swap_numb(543)) == int
+    assert 543 .__class__ is int
     assert isinstance(swap_numb(543), int)
     numb = 543
     assert type(numb) == int
