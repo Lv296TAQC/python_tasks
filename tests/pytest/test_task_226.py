@@ -2,6 +2,7 @@ import pytest
 from tasks.task_226 import common_multiple
 
 
+@pytest.mark.suit
 @pytest.mark.parametrize('a, b, c', [
     (12, 22, 132),
     (1, 1, 1)
@@ -10,6 +11,8 @@ def test_common_multiple_suitable_args(a, b, c):
     assert common_multiple(a, b) == c
 
 
+@pytest.mark.skip
+@pytest.mark.exception
 @pytest.mark.parametrize('a, b', [
     (-134, 2),
     (12, -1)
@@ -19,6 +22,7 @@ def test_common_multiple_unsuitable_args(a, b):
         common_multiple(a, b)
 
 
+@pytest.mark.exception
 @pytest.mark.parametrize('a, b', [
     ('', 4),
     ('5dssa6578', 4),

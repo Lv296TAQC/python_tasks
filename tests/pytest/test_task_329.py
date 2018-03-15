@@ -2,6 +2,7 @@ import pytest
 from tasks.task_329 import sum_of_digits, main_func
 
 
+@pytest.mark.suit
 @pytest.mark.parametrize('a, b', [
     (15, 6),
     (1, 1),
@@ -12,17 +13,21 @@ def test_sum_of_digits_suitable_args(a, b):
     assert sum_of_digits(a) == b
 
 
+@pytest.mark.exception
 @pytest.mark.parametrize('a', [12.8, 0.0])
 def test_sum_of_digits_unsuitable_args(a):
     with pytest.raises(ValueError):
         sum_of_digits(a)
 
 
+@pytest.mark.skip
+@pytest.mark.exception
 def test_sum_of_digits_str_arg():
     with pytest.raises(TypeError):
         sum_of_digits('5')
 
 
+@pytest.mark.suit
 @pytest.mark.parametrize('a, b, c', [
     (24, 36, [6, 15]),
     (-24, 36, []),
@@ -35,6 +40,7 @@ def test_main_func_suitable_args(a, b, c):
     assert main_func(a, b) == c
 
 
+@pytest.mark.exception
 @pytest.mark.parametrize('a, b', [
     (-100, 36),
     (100, -1),
@@ -48,6 +54,7 @@ def test_main_func_unsuitable_args(a, b):
         main_func(a, b)
 
 
+@pytest.mark.exception
 @pytest.mark.parametrize('a, b', [
     ('21', 25),
     (21, '25'),
