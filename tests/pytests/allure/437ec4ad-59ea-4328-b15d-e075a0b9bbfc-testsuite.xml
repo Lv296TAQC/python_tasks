@@ -1,0 +1,66 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521285356530" stop="1521285356530">
+  <name>tests.pytests.test_pytest_task_178b</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521285356530" status="passed" stop="1521285356530">
+      <name>test_01_task_178b</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356530" status="passed" stop="1521285356530">
+      <name>test_02_task_178b</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356530" status="passed" stop="1521285356530">
+      <name>test_03_task_178b</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356530" status="passed" stop="1521285356530">
+      <name>test_04_task_178b</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356530" status="passed" stop="1521285356530">
+      <name>test_05_task_178b</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

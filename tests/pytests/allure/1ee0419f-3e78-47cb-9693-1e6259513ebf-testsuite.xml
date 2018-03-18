@@ -1,0 +1,164 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521285356686" stop="1521285356733">
+  <name>tests.pytests.test_pytest_task_88</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521285356686" status="passed" stop="1521285356686">
+      <name>test_00_task_88[param_test0]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356686" status="passed" stop="1521285356686">
+      <name>test_00_task_88[param_test1]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356686" status="passed" stop="1521285356702">
+      <name>test_00_task_88[param_test2]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_01_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_02_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_03_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_04_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_05_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_06_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="passed" stop="1521285356702">
+      <name>test_07_task_88</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356702" status="pending" stop="1521285356733">
+      <name>test_08_task_88_fail</name>
+      <failure>
+        <message></message>
+        <stack-trace>@pytest.mark.xfail
+    def test_08_task_88_fail():
+&gt;       assert three_go_in(2)
+E       assert False
+E        +  where False = three_go_in(2)
+
+test_pytest_task_88.py:66: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521285356733" status="canceled" stop="1521285356733">
+      <name>test_09_task_88</name>
+      <failure>
+        <message>Skipped: Why? Because I CAN! (Elisa, League Of Legends ref.)</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5516-MainThread"/>
+        <label name="host" value="Butcher"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
