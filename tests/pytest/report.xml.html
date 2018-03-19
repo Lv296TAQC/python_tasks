@@ -1,0 +1,862 @@
+
+        <html>
+        <head>
+            <title>report.xml - Junit Test Report</title>
+            <style type="text/css">
+              h1 {
+    font-family: sans-serif;
+}
+h2 {
+    font-family: sans-serif;
+}
+
+li > a {
+    font-family: monospace;
+}
+
+.testclass > div {
+    padding-left: 1em;
+}
+
+.testclass > a > div {
+    font-size: 1.3em;
+    font-family: sans-serif;
+}
+
+.testcase > div {
+    border-left: 3px solid black;
+    padding-left: 1em;
+}
+
+.testcase pre {
+    display: block;
+    padding: 4px;
+    margin-right: 1em;
+    background-color: #121212;
+    color: #dedede;
+    white-space: pre-wrap;
+}
+
+.testcase .details b {
+    font-size: 1.2em;
+}
+
+.stdout, .stderr, .property {
+    margin-left: 1em;
+}
+
+.skipped {
+    background-color: #eeee00;
+}
+
+.failure {
+    background-color: #eeaaaa;
+}
+
+.slanted {
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    text-align: right;
+    font-family: monospace;
+}
+
+.skipped {
+    background-color: gold;
+}
+
+.failed {
+    background-color: lightcoral;
+}
+
+.passed {
+    background-color: limegreen;
+}
+            </style>
+        </head><body><h1>Test Report</h1>
+        <div class="testsuite">
+            <h2>Test Suite: pytest</h2><a name="274f7f50-d2cb-4068-8120-5f4cf5a7d19f">
+            
+            
+            <table>
+            <tr><th align="left">Duration</th><td align="right">0.223 sec</td></tr>
+            <tr><th align="left">Test Cases</th><td align="right">35</td></tr>
+            <tr><th align="left">Failures</th><td align="right">0</td></tr>
+            
+            
+            </table>
+            <a name="toc"></a>
+            <h2>Results Index</h2>
+            
+        <ul>
+            
+            
+            <li>All Test Classes
+            <ul>
+            <li>
+                <a href="#2708fe92-fac3-4695-851f-703ffdcf23cb">test_pytest_task_182</a>
+                <ul>
+                
+                    <li>
+                        <a href="#d4401a5a-ddbf-40f8-b731-7e03a4273567">test_sum_div5_notdiv7</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#1d23044a-52ac-4212-99f2-df84f29096da">test_sum_div5_notdiv7_errors</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#0a970c8f-2d31-4c50-9c44-d651f8234b5e">test_sum_div5_notdiv7_errors2</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#eda0f1ad-b8de-4bcf-af77-59c4e91799ff">test_sum_div5_notdiv7_errors3</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#cf1b8240-0057-4393-b24c-fbc865d5c3c5">test_pytest_task_241</a>
+                <ul>
+                
+                    <li>
+                        <a href="#99391d3d-7ec6-489f-acaa-d8c8fe74e7b6">test_difficult_formula</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#6b4f9da1-00a8-492a-acf5-56763c20ff1c">test_difficult_formula_for_errors</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#2bc63fc3-6a20-4293-9649-da2459d858e9">test_validate_values</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#45307de9-dab3-4f79-9f75-d19bc7c8f478">test_validate_values_for_errors</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#4a525014-42cf-4d10-b0f2-d7073688d5ad">test_validate_values_for_errors2</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#af925d41-30ec-427d-b3c3-0d2c2e779a50">test_pytest_task_332</a>
+                <ul>
+                
+                    <li>
+                        <a href="#0d36c285-0adc-4056-a07a-f00eb66e6366">test_lagrange[123-expected0]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#fd680a94-bb4b-41b0-9fcf-e4bb975b6f0f">test_lagrange[100-expected1]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#f246e94f-ae6e-4961-83df-a2db8126ad9f">test_lagrange[7398-expected2]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#2f9cc575-a59e-4d1e-b2b3-1afc233c81f7">test_lagrange_for_errors</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#eb2de9bb-47c4-4cf5-892f-269c04c02ad0">test_lagrange_for_errors2</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#2fec7af1-e1e9-46e8-b13b-0ef9b0a27b6f">test_lagrange_for_errors3</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#eadee6e2-a4f7-4493-9dd1-3c6df3629e96">test_pytest_task_568</a>
+                <ul>
+                
+                    <li>
+                        <a href="#21e9798d-02c6-4998-b893-9605d00d994d">test_find_subset[-10--35]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#ba2fa8c2-0ef3-40c5-9c22-a7b8387af184">test_find_subset[-5--33]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#5b66dcdc-1c7f-4c95-be0d-9aa143e6c4a8">test_find_subset[0-123456789]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#2c3c2f1c-a697-4cae-825e-a57d333a4329">test_find_subset[5-3456788]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#adaae072-61af-4c27-9a6d-90108b5bc95c">test_find_subset_for_errors</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#ff627a98-138a-4d80-9cd8-2ba85744ef51">test_single_solution[123-1+23+4+5-6+7+89]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#61ec2a10-7c78-46a2-824b-79c14f46d591">test_single_solution[57-1+2-3-45+6+7+89]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#b2208ed7-29d4-4844-ab30-e5eb1f511246">test_single_solution[1-1+23-45-67+89]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#5179fe64-93dd-4ccd-b873-ad3b006c3996">test_single_solution_for_invalid[qwerty-Invalid input. Please write correct natural number]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#0b0e3811-6e86-4f4b-964d-77f5fcdb111c">test_single_solution_for_invalid[123456-No possible solutions]</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#4f488fee-e12e-49c0-a690-644ef1fce7f0">test_pytest_task_88d</a>
+                <ul>
+                
+                    <li>
+                        <a href="#03d0c89a-0876-4c19-8fb3-4ef3999ed197">test_one_bounds[for0]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#8e34fb66-eaa6-47a0-b190-72453a3ffc08">test_one_bounds[for5]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#61228a9e-964d-46f8-90a5-77a8b4a17a88">test_one_bounds[for10]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#e747595f-9d29-4dda-ba63-3b6a3423b786">test_one_bounds[for15]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#798ceb34-3302-4865-9039-e24e50ed9dc3">test_one_bounds_for_error</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#eb843541-4a35-40c8-b263-00e44dfe1acc">test_one_bounds_for_error2</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#8285c9c6-59aa-4189-92f1-8da665a0f8dc">test_validate</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#dae57ff7-ddda-4c38-acf3-78a86ec84a0d">test_validate_for_invalid[for_string]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#68218113-2a2a-4155-9298-2f07a5b8ec87">test_validate_for_invalid[for_dict]</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#d8a70f56-0019-4e50-92dd-f315c8fbbeb0">test_validate_for_invalid[for_list]</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            </ul>
+            </li>
+        </ul>
+        
+            <hr size="2"/>
+            <h2>Test Results</h2>
+            <div class="testclasses">
+            
+        <hr size="2"/>
+        <a name="2708fe92-fac3-4695-851f-703ffdcf23cb">
+        <div class="testclass">
+            <div>Test Class: test_pytest_task_182</div>
+            <div class="testcases">
+            
+    <a name="d4401a5a-ddbf-40f8-b731-7e03a4273567">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_sum_div5_notdiv7</b></span><br/>
+                <span class="testclassname">test_pytest_task_182</span><br/>
+                <span class="duration">Time Taken: 0.006000518798828125s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+            <div class="stdout"><i>Stdout</i><br/>
+                <pre>start
+end
+</pre></div>
+            <hr size="1"/>
+            <div class="stderr"><i>Stderr</i><br/>
+                <pre></pre></div>
+                
+        </div>
+    </a>
+        
+    <a name="1d23044a-52ac-4212-99f2-df84f29096da">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_sum_div5_notdiv7_errors</b></span><br/>
+                <span class="testclassname">test_pytest_task_182</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="0a970c8f-2d31-4c50-9c44-d651f8234b5e">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_sum_div5_notdiv7_errors2</b></span><br/>
+                <span class="testclassname">test_pytest_task_182</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="eda0f1ad-b8de-4bcf-af77-59c4e91799ff">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_sum_div5_notdiv7_errors3</b></span><br/>
+                <span class="testclassname">test_pytest_task_182</span><br/>
+                <span class="duration">Time Taken: 0.0019998550415039062s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+            </div>
+        </div>
+        </a>
+        
+        <hr size="2"/>
+        <a name="cf1b8240-0057-4393-b24c-fbc865d5c3c5">
+        <div class="testclass">
+            <div>Test Class: test_pytest_task_241</div>
+            <div class="testcases">
+            
+    <a name="99391d3d-7ec6-489f-acaa-d8c8fe74e7b6">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_difficult_formula</b></span><br/>
+                <span class="testclassname">test_pytest_task_241</span><br/>
+                <span class="duration">Time Taken: 0.012000560760498047s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="6b4f9da1-00a8-492a-acf5-56763c20ff1c">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_difficult_formula_for_errors</b></span><br/>
+                <span class="testclassname">test_pytest_task_241</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="2bc63fc3-6a20-4293-9649-da2459d858e9">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate_values</b></span><br/>
+                <span class="testclassname">test_pytest_task_241</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="45307de9-dab3-4f79-9f75-d19bc7c8f478">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate_values_for_errors</b></span><br/>
+                <span class="testclassname">test_pytest_task_241</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="4a525014-42cf-4d10-b0f2-d7073688d5ad">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate_values_for_errors2</b></span><br/>
+                <span class="testclassname">test_pytest_task_241</span><br/>
+                <span class="duration">Time Taken: 0.0s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+            </div>
+        </div>
+        </a>
+        
+        <hr size="2"/>
+        <a name="af925d41-30ec-427d-b3c3-0d2c2e779a50">
+        <div class="testclass">
+            <div>Test Class: test_pytest_task_332</div>
+            <div class="testcases">
+            
+    <a name="0d36c285-0adc-4056-a07a-f00eb66e6366">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_lagrange[123-expected0]</b></span><br/>
+                <span class="testclassname">test_pytest_task_332</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="fd680a94-bb4b-41b0-9fcf-e4bb975b6f0f">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_lagrange[100-expected1]</b></span><br/>
+                <span class="testclassname">test_pytest_task_332</span><br/>
+                <span class="duration">Time Taken: 0.005000591278076172s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="f246e94f-ae6e-4961-83df-a2db8126ad9f">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_lagrange[7398-expected2]</b></span><br/>
+                <span class="testclassname">test_pytest_task_332</span><br/>
+                <span class="duration">Time Taken: 0.0010001659393310547s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="2f9cc575-a59e-4d1e-b2b3-1afc233c81f7">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_lagrange_for_errors</b></span><br/>
+                <span class="testclassname">test_pytest_task_332</span><br/>
+                <span class="duration">Time Taken: 0.0010001659393310547s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="eb2de9bb-47c4-4cf5-892f-269c04c02ad0">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_lagrange_for_errors2</b></span><br/>
+                <span class="testclassname">test_pytest_task_332</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="2fec7af1-e1e9-46e8-b13b-0ef9b0a27b6f">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_lagrange_for_errors3</b></span><br/>
+                <span class="testclassname">test_pytest_task_332</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+            </div>
+        </div>
+        </a>
+        
+        <hr size="2"/>
+        <a name="eadee6e2-a4f7-4493-9dd1-3c6df3629e96">
+        <div class="testclass">
+            <div>Test Class: test_pytest_task_568</div>
+            <div class="testcases">
+            
+    <a name="21e9798d-02c6-4998-b893-9605d00d994d">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_find_subset[-10--35]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="ba2fa8c2-0ef3-40c5-9c22-a7b8387af184">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_find_subset[-5--33]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="5b66dcdc-1c7f-4c95-be0d-9aa143e6c4a8">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_find_subset[0-123456789]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.0010001659393310547s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="2c3c2f1c-a697-4cae-825e-a57d333a4329">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_find_subset[5-3456788]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="adaae072-61af-4c27-9a6d-90108b5bc95c">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_find_subset_for_errors</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.0010001659393310547s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="ff627a98-138a-4d80-9cd8-2ba85744ef51">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_single_solution[123-1+23+4+5-6+7+89]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.004000425338745117s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="61ec2a10-7c78-46a2-824b-79c14f46d591">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_single_solution[57-1+2-3-45+6+7+89]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.005000114440917969s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="b2208ed7-29d4-4844-ab30-e5eb1f511246">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_single_solution[1-1+23-45-67+89]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.004000425338745117s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="5179fe64-93dd-4ccd-b873-ad3b006c3996">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_single_solution_for_invalid[qwerty-Invalid input. Please write correct natural number]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="0b0e3811-6e86-4f4b-964d-77f5fcdb111c">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_single_solution_for_invalid[123456-No possible solutions]</b></span><br/>
+                <span class="testclassname">test_pytest_task_568</span><br/>
+                <span class="duration">Time Taken: 0.024001359939575195s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+            </div>
+        </div>
+        </a>
+        
+        <hr size="2"/>
+        <a name="4f488fee-e12e-49c0-a690-644ef1fce7f0">
+        <div class="testclass">
+            <div>Test Class: test_pytest_task_88d</div>
+            <div class="testcases">
+            
+    <a name="03d0c89a-0876-4c19-8fb3-4ef3999ed197">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_one_bounds[for0]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="8e34fb66-eaa6-47a0-b190-72453a3ffc08">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_one_bounds[for5]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0010001659393310547s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="61228a9e-964d-46f8-90a5-77a8b4a17a88">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_one_bounds[for10]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="e747595f-9d29-4dda-ba63-3b6a3423b786">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_one_bounds[for15]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.007000446319580078s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="798ceb34-3302-4865-9039-e24e50ed9dc3">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_one_bounds_for_error</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.002000093460083008s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="eb843541-4a35-40c8-b263-00e44dfe1acc">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_one_bounds_for_error2</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="8285c9c6-59aa-4189-92f1-8da665a0f8dc">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="dae57ff7-ddda-4c38-acf3-78a86ec84a0d">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate_for_invalid[for_string]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="68218113-2a2a-4155-9298-2f07a5b8ec87">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate_for_invalid[for_dict]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0009999275207519531s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+    <a name="d8a70f56-0019-4e50-92dd-f315c8fbbeb0">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>test_validate_for_invalid[for_list]</b></span><br/>
+                <span class="testclassname">test_pytest_task_88d</span><br/>
+                <span class="duration">Time Taken: 0.0010004043579101562s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+        </div>
+    </a>
+        
+            </div>
+        </div>
+        </a>
+        
+            </div>
+        </div>
+        </body></html>

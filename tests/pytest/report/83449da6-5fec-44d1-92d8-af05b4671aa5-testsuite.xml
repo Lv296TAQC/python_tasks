@@ -1,0 +1,65 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521498869183" stop="1521498869198">
+  <name>tests.pytest.test_pytest_task_182</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521498869183" status="passed" stop="1521498869187">
+      <name>test_sum_div5_notdiv7</name>
+      <attachments>
+        <attachment source="61cecd71-24bb-4a69-9e47-84fd4f220def-attachment.txt" title="Captured stdout setup" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869187" status="passed" stop="1521498869187">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869191" status="passed" stop="1521498869192">
+      <name>test_sum_div5_notdiv7_errors</name>
+      <attachments>
+        <attachment source="b8d89980-f46e-49a9-be9f-8e3fd1006c22-attachment.txt" title="report.xml" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869194" status="passed" stop="1521498869196">
+      <name>test_sum_div5_notdiv7_errors2</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869197" status="passed" stop="1521498869198">
+      <name>test_sum_div5_notdiv7_errors3</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

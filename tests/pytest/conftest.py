@@ -15,7 +15,7 @@ def conf_fixture(request):
 @pytest.fixture()
 def conf_func_fixture(request):
     """
-    Auto session resource fixture
+    Auto function resource fixture
     """
     print("start")
     def auto_func_teardown():

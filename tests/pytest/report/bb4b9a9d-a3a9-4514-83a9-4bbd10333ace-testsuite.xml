@@ -1,0 +1,72 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521498869199" stop="1521498869211">
+  <name>tests.pytest.test_pytest_task_241</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521498869199" status="passed" stop="1521498869204">
+      <name>test_difficult_formula_for_errors</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869204" status="passed" stop="1521498869204">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869206" status="passed" stop="1521498869207">
+      <name>test_validate_values</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869207" status="passed" stop="1521498869207">
+          <name>make_some_data_foo</name>
+          <title>make_some_data_foo</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869208" status="canceled" stop="1521498869209">
+      <name>test_validate_values_for_errors</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869210" status="passed" stop="1521498869211">
+      <name>test_validate_values_for_errors2</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

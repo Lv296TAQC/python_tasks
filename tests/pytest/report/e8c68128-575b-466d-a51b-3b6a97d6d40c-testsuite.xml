@@ -1,0 +1,126 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521498869229" stop="1521498869289">
+  <name>tests.pytest.test_pytest_task_568</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521498869229" status="passed" stop="1521498869234">
+      <name>test_find_subset[-10--35]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869235" status="passed" stop="1521498869236">
+      <name>test_find_subset[-5--33]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869237" status="passed" stop="1521498869239">
+      <name>test_find_subset[0-123456789]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869239" status="passed" stop="1521498869241">
+      <name>test_find_subset[5-3456788]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869242" status="passed" stop="1521498869243">
+      <name>test_find_subset_for_errors</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869244" status="passed" stop="1521498869249">
+      <name>test_single_solution[123-1+23+4+5-6+7+89]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869250" status="passed" stop="1521498869255">
+      <name>test_single_solution[57-1+2-3-45+6+7+89]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869256" status="passed" stop="1521498869261">
+      <name>test_single_solution[1-1+23-45-67+89]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869262" status="passed" stop="1521498869263">
+      <name>test_single_solution_for_invalid[qwerty-Invalid input. Please write correct natural number]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521498869264" status="passed" stop="1521498869289">
+      <name>test_single_solution_for_invalid[123456-No possible solutions]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

@@ -1,0 +1,294 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521498869290" stop="1521498869410">
+  <name>tests.pytest.test_pytest_task_88d</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521498869290" status="failed" stop="1521498869363">
+      <name>test_one_bounds[for0]</name>
+      <failure>
+        <message>AssertionError: assert 2 == 101
+ +  where 2 = one_bounds(0)</message>
+        <stack-trace>input = 0, expected = 101
+
+    @pytest.allure.step('First step')
+    @pytest.mark.parametrize('input, expected',
+                             [(0, 101), (5, 151), (10, 1101), (15, 1151)],
+                             ids=['for0', 'for5', 'for10', 'for15'
+    ])
+    def test_one_bounds(input, expected):
+        logging.info('Function one_bounds: Input - {}, actual result - {}, '
+                     'expected result - {}'.format(input, one_bounds(input), expected))
+        if one_bounds(input) != expected:
+            logging.error('This test failed')
+&gt;       assert one_bounds(input) == expected
+E       assert 2 == 101
+E        +  where 2 = one_bounds(0)
+
+test_pytest_task_88d.py:22: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="38f68622-fdea-49ce-8f0d-0bdda04a514b-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869295" status="failed" stop="1521498869296">
+          <name>First step</name>
+          <title>First step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869366" status="failed" stop="1521498869372">
+      <name>test_one_bounds[for5]</name>
+      <failure>
+        <message>AssertionError: assert 7 == 151
+ +  where 7 = one_bounds(5)</message>
+        <stack-trace>input = 5, expected = 151
+
+    @pytest.allure.step('First step')
+    @pytest.mark.parametrize('input, expected',
+                             [(0, 101), (5, 151), (10, 1101), (15, 1151)],
+                             ids=['for0', 'for5', 'for10', 'for15'
+    ])
+    def test_one_bounds(input, expected):
+        logging.info('Function one_bounds: Input - {}, actual result - {}, '
+                     'expected result - {}'.format(input, one_bounds(input), expected))
+        if one_bounds(input) != expected:
+            logging.error('This test failed')
+&gt;       assert one_bounds(input) == expected
+E       assert 7 == 151
+E        +  where 7 = one_bounds(5)
+
+test_pytest_task_88d.py:22: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="197ff93d-fe96-4102-8bc0-379be3ff671a-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869367" status="failed" stop="1521498869368">
+          <name>First step</name>
+          <title>First step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869375" status="failed" stop="1521498869381">
+      <name>test_one_bounds[for10]</name>
+      <failure>
+        <message>AssertionError: assert 21 == 1101
+ +  where 21 = one_bounds(10)</message>
+        <stack-trace>input = 10, expected = 1101
+
+    @pytest.allure.step('First step')
+    @pytest.mark.parametrize('input, expected',
+                             [(0, 101), (5, 151), (10, 1101), (15, 1151)],
+                             ids=['for0', 'for5', 'for10', 'for15'
+    ])
+    def test_one_bounds(input, expected):
+        logging.info('Function one_bounds: Input - {}, actual result - {}, '
+                     'expected result - {}'.format(input, one_bounds(input), expected))
+        if one_bounds(input) != expected:
+            logging.error('This test failed')
+&gt;       assert one_bounds(input) == expected
+E       assert 21 == 1101
+E        +  where 21 = one_bounds(10)
+
+test_pytest_task_88d.py:22: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="bd8bc6df-93d0-4d11-8af4-7d55f81007de-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869376" status="failed" stop="1521498869377">
+          <name>First step</name>
+          <title>First step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869384" status="failed" stop="1521498869391">
+      <name>test_one_bounds[for15]</name>
+      <failure>
+        <message>AssertionError: assert 26 == 1151
+ +  where 26 = one_bounds(15)</message>
+        <stack-trace>input = 15, expected = 1151
+
+    @pytest.allure.step('First step')
+    @pytest.mark.parametrize('input, expected',
+                             [(0, 101), (5, 151), (10, 1101), (15, 1151)],
+                             ids=['for0', 'for5', 'for10', 'for15'
+    ])
+    def test_one_bounds(input, expected):
+        logging.info('Function one_bounds: Input - {}, actual result - {}, '
+                     'expected result - {}'.format(input, one_bounds(input), expected))
+        if one_bounds(input) != expected:
+            logging.error('This test failed')
+&gt;       assert one_bounds(input) == expected
+E       assert 26 == 1151
+E        +  where 26 = one_bounds(15)
+
+test_pytest_task_88d.py:22: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="3afe3aeb-a007-4e66-8771-94052c119250-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869386" status="failed" stop="1521498869386">
+          <name>First step</name>
+          <title>First step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869393" status="passed" stop="1521498869395">
+      <name>test_one_bounds_for_error</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869395" status="passed" stop="1521498869395">
+          <name>Third step</name>
+          <title>Third step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869396" status="passed" stop="1521498869398">
+      <name>test_one_bounds_for_error2</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869397" status="passed" stop="1521498869397">
+          <name>Fourth step</name>
+          <title>Fourth step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869398" status="passed" stop="1521498869400">
+      <name>test_validate</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869399" status="passed" stop="1521498869399">
+          <name>Fifth step</name>
+          <title>Fifth step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869400" status="passed" stop="1521498869402">
+      <name>test_validate_for_invalid[for_string]</name>
+      <attachments>
+        <attachment source="8550591d-1acd-4d99-9a56-6339cbceb74d-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869402" status="passed" stop="1521498869402">
+          <name>Sixth step</name>
+          <title>Sixth step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869404" status="passed" stop="1521498869406">
+      <name>test_validate_for_invalid[for_dict]</name>
+      <attachments>
+        <attachment source="10bea5b8-7f3c-4511-9698-362b1b87fe74-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869406" status="passed" stop="1521498869406">
+          <name>Sixth step</name>
+          <title>Sixth step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521498869409" status="passed" stop="1521498869410">
+      <name>test_validate_for_invalid[for_list]</name>
+      <attachments>
+        <attachment source="53ba6c7e-9494-4418-933f-c2cb0e16e44f-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6176-MainThread"/>
+        <label name="host" value="Ostap-ПК"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521498869410" status="passed" stop="1521498869410">
+          <name>Sixth step</name>
+          <title>Sixth step</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
