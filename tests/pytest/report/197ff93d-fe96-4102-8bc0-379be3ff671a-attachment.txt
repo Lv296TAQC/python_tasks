@@ -1,2 +1,0 @@
-test_pytest_task_88d.py     19 INFO     Function one_bounds: Input - 5, actual result - 7, expected result - 151
-test_pytest_task_88d.py     21 ERROR    This test failed

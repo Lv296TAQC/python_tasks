@@ -1,0 +1,14 @@
+<ns0:environment xmlns:ns0="urn:model.commons.qatools.yandex.ru">
+  <id>bffa95d7-e355-43d0-94d1-6bbecf3a7b19</id>
+  <name>Allure environment parameters</name>
+  <parameter>
+    <key>report</key>
+    <name>report</name>
+    <value>Allure report</value>
+  </parameter>
+  <parameter>
+    <key>browser</key>
+    <name>browser</name>
+    <value>Я.Браузер</value>
+  </parameter>
+</ns0:environment>

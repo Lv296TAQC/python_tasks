@@ -42,6 +42,7 @@ def test_one_bounds_for_error2():
     with pytest.raises(TypeError):
         one_bounds()
 
+@pytest.allure.BLOCKER
 @pytest.allure.step('Fifth step')
 def test_validate():
     assert validate(12) == True

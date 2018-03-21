@@ -1,0 +1,6 @@
+{
+  "test_pytest_task_88d.py::test_one_bounds[for0]": true,
+  "test_pytest_task_88d.py::test_one_bounds[for10]": true,
+  "test_pytest_task_88d.py::test_one_bounds[for15]": true,
+  "test_pytest_task_88d.py::test_one_bounds[for5]": true
+}

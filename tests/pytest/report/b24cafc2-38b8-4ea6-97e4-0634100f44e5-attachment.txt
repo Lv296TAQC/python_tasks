@@ -1,0 +1,1 @@
+test_pytest_task_88d.py     60 INFO     Function validate: Input - qwerty, actual result - False, expected result - False

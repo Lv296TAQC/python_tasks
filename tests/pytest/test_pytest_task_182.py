@@ -10,21 +10,25 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger("test_pytest_task_182")
 logger.info('This is an informative message for test_pytest_task_182.py')
 
+@pytest.allure.severity(pytest.allure.severity_level.MINOR)
 def test_sum_div5_notdiv7(conf_func_fixture):
     with pytest.allure.step('step one'):
         assert sum_div5_notdiv7([5, 10, 107, 456]) == (15, 2)
 
+@pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
 @pytest.mark.for_errors
 def test_sum_div5_notdiv7_errors():
     pytest.allure.attach('My attachment', 'My example of using attachment')
     with pytest.raises(TypeError):
         sum_div5_notdiv7('qwerty')
 
+@pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
 @pytest.mark.for_errors
 def test_sum_div5_notdiv7_errors2():
     with pytest.raises(TypeError):
         sum_div5_notdiv7()
 
+@pytest.allure.severity(pytest.allure.severity_level.MINOR)
 @pytest.mark.for_errors
 def test_sum_div5_notdiv7_errors3():
     with pytest.raises(KeyError):

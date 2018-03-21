@@ -1,0 +1,4 @@
+{
+  "test_login.py": true,
+  "test_sel.py::test_registration": true
+}
