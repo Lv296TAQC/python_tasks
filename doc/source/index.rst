@@ -10,7 +10,9 @@ Welcome to demo's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   my_tasks
 
+.. note:: You will find all tasks in *Module Index* below.
 
 Indices and tables
 ==================

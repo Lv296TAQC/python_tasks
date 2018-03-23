@@ -1,0 +1,1 @@
+test_task_178b.py           21 DEBUG    multiple_numbers([1, 8, 6, 1, 5, 78]) => 1, expected: 1

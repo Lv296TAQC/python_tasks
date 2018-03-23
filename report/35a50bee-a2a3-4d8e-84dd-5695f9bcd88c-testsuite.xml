@@ -1,0 +1,275 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521801167600" stop="1521801167626">
+  <name>tests.pytest.test_task_87</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521801167600" status="passed" stop="1521801167601">
+      <name>test_natural_number_suitable_args[1234-2-7]</name>
+      <attachments>
+        <attachment source="e769c2be-237e-446a-bef3-29d24ae95234-attachment.txt" title="my attach" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521801167601" status="passed" stop="1521801167601">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments>
+            <attachment source="dfacc30e-f2aa-47c5-bd13-b64fcbea8d53-attachment.jpg" title="screenshot" type="image/jpg"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1521801167601" status="passed" stop="1521801167601">
+          <name>step two</name>
+          <title>step two</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521801167602" status="passed" stop="1521801167603">
+      <name>test_natural_number_suitable_args[7200-2-0]</name>
+      <attachments>
+        <attachment source="3a3e03e8-cdf2-4731-a29c-9d83efac5cf0-attachment.txt" title="my attach" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521801167603" status="passed" stop="1521801167603">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments>
+            <attachment source="1e49f858-c865-4ba0-a867-914a26f6afb3-attachment.jpg" title="screenshot" type="image/jpg"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1521801167603" status="passed" stop="1521801167603">
+          <name>step two</name>
+          <title>step two</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521801167605" status="passed" stop="1521801167606">
+      <name>test_natural_number_suitable_args[1510-0-0]</name>
+      <attachments>
+        <attachment source="12122946-ee43-413b-a7d0-d415a8ce7215-attachment.txt" title="my attach" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521801167605" status="passed" stop="1521801167606">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments>
+            <attachment source="912a35de-1727-48e4-97cc-740050808a8c-attachment.jpg" title="screenshot" type="image/jpg"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1521801167606" status="passed" stop="1521801167606">
+          <name>step two</name>
+          <title>step two</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521801167607" status="passed" stop="1521801167608">
+      <name>test_natural_number_suitable_args[1-4-1]</name>
+      <attachments>
+        <attachment source="19f3c6f6-4b89-4db1-96aa-42fbf8be9e4e-attachment.txt" title="my attach" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521801167608" status="passed" stop="1521801167608">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments>
+            <attachment source="8b6e2ab9-2389-4b57-a5fa-8320bbd05f7a-attachment.jpg" title="screenshot" type="image/jpg"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1521801167608" status="passed" stop="1521801167608">
+          <name>step two</name>
+          <title>step two</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521801167609" status="passed" stop="1521801167610">
+      <name>test_natural_number_suitable_args[815-4-14]</name>
+      <attachments>
+        <attachment source="58708d31-d4b2-4498-8e1e-1bd35724a23c-attachment.txt" title="my attach" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1521801167610" status="passed" stop="1521801167610">
+          <name>step one</name>
+          <title>step one</title>
+          <attachments>
+            <attachment source="72f65c3a-4b51-406a-86fe-61777bd1a142-attachment.jpg" title="screenshot" type="image/jpg"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1521801167610" status="passed" stop="1521801167610">
+          <name>step two</name>
+          <title>step two</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1521801167611" status="canceled" stop="1521801167612">
+      <name>test_natural_number_unsuitable_args[-1234-2]</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167612" status="canceled" stop="1521801167613">
+      <name>test_natural_number_unsuitable_args[557--1]</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167613" status="canceled" stop="1521801167614">
+      <name>test_natural_number_unsuitable_args[5.57-2]</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167615" status="canceled" stop="1521801167615">
+      <name>test_natural_number_unsuitable_args[3967-8.9]</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167616" status="passed" stop="1521801167617">
+      <name>test_natural_number_str_args[-4]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167617" status="passed" stop="1521801167618">
+      <name>test_natural_number_str_args[5dssa6578-4]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167619" status="passed" stop="1521801167621">
+      <name>test_natural_number_str_args[8569-]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167622" status="passed" stop="1521801167623">
+      <name>test_natural_number_str_args[8569-3]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167624" status="passed" stop="1521801167626">
+      <name>test_natural_number_str_args[d5fd5fd5-t5]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

@@ -1,0 +1,1 @@
+test_task_178b.py           21 DEBUG    multiple_numbers([-110, 5, 78]) => 0, expected: 0

@@ -1,0 +1,80 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521801167414" stop="1521801167430">
+  <name>tests.pytest.test_task_178b</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521801167414" status="passed" stop="1521801167420">
+      <name>test_multiple_numbers_suitable_args[a0-3]</name>
+      <attachments>
+        <attachment source="3d907be8-fa37-4db7-8896-bbff3d36eda1-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167421" status="passed" stop="1521801167422">
+      <name>test_multiple_numbers_suitable_args[a1-0]</name>
+      <attachments>
+        <attachment source="b8d8200b-5e41-4ec2-ae40-8128aa1bd2cc-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167424" status="passed" stop="1521801167426">
+      <name>test_multiple_numbers_suitable_args[a2-1]</name>
+      <attachments>
+        <attachment source="721ec25e-2c17-4f34-870d-5783ada17446-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167427" status="canceled" stop="1521801167428">
+      <name>test_multiple_numbers_str_arg[]</name>
+      <failure>
+        <message>Skipped: some reason</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521801167429" status="canceled" stop="1521801167430">
+      <name>test_multiple_numbers_str_arg[58, -64, 9, 11]</name>
+      <failure>
+        <message>Skipped: some reason</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="28462-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
