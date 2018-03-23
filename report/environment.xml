@@ -1,0 +1,14 @@
+<ns0:environment xmlns:ns0="urn:model.commons.qatools.yandex.ru">
+  <id>19d20b18-aa47-454d-bac4-d23fe14b4f3f</id>
+  <name>Allure environment parameters</name>
+  <parameter>
+    <key>browser</key>
+    <name>browser</name>
+    <value>Ubuntu 16.04.3 LTS</value>
+  </parameter>
+  <parameter>
+    <key>report</key>
+    <name>report</name>
+    <value>Allure report</value>
+  </parameter>
+</ns0:environment>

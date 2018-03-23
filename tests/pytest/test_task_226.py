@@ -1,4 +1,5 @@
 import pytest
+
 from tasks.task_226 import common_multiple
 
 

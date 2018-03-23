@@ -1,0 +1,144 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521456428302" stop="1521456428342">
+  <name>tests.pytest.test_task_226</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521456428302" status="failed" stop="1521456428329">
+      <name>test_common_multiple_suitable_args[12-22-132]</name>
+      <failure>
+        <message>AssertionError: assert [132] == 132
+ +  where [132] = common_multiple(12, 22)</message>
+        <stack-trace>a = 12, b = 22, c = 132
+
+    @pytest.mark.suit
+    @pytest.mark.parametrize('a, b, c', [
+        (12, 22, 132),
+        (1, 1, 1)
+    ])
+    def test_common_multiple_suitable_args(a, b, c):
+&gt;       assert common_multiple(a, b) == c
+E       assert [132] == 132
+E        +  where [132] = common_multiple(12, 22)
+
+tests/pytest/test_task_226.py:11: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428330" status="failed" stop="1521456428333">
+      <name>test_common_multiple_suitable_args[1-1-1]</name>
+      <failure>
+        <message>AssertionError: assert [] == 1
+ +  where [] = common_multiple(1, 1)</message>
+        <stack-trace>a = 1, b = 1, c = 1
+
+    @pytest.mark.suit
+    @pytest.mark.parametrize('a, b, c', [
+        (12, 22, 132),
+        (1, 1, 1)
+    ])
+    def test_common_multiple_suitable_args(a, b, c):
+&gt;       assert common_multiple(a, b) == c
+E       assert [] == 1
+E        +  where [] = common_multiple(1, 1)
+
+tests/pytest/test_task_226.py:11: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428334" status="canceled" stop="1521456428335">
+      <name>test_common_multiple_unsuitable_args[-134-2]</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428335" status="canceled" stop="1521456428336">
+      <name>test_common_multiple_unsuitable_args[12--1]</name>
+      <failure>
+        <message>Skipped: unconditional skip</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428337" status="passed" stop="1521456428338">
+      <name>test_common_multiple_str_args[-4]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428338" status="passed" stop="1521456428339">
+      <name>test_common_multiple_str_args[5dssa6578-4]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428340" status="passed" stop="1521456428341">
+      <name>test_common_multiple_str_args[8569-]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428341" status="passed" stop="1521456428342">
+      <name>test_common_multiple_str_args[8569-3]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

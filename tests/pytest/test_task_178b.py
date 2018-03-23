@@ -1,5 +1,13 @@
 import pytest
+import logging
+
 from tasks.task_178_b import multiple_numbers
+
+logging.basicConfig(level=logging.DEBUG,
+                    format='# %(levelname)-8s [%(asctime)s] %(filename)-20s [LINE:%(lineno)s]   %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p',
+                    filename="my_log.log",
+                    filemode="w")
 
 
 @pytest.mark.suit
@@ -9,7 +17,9 @@ from tasks.task_178_b import multiple_numbers
     ([1, 8, 6, 1, 5, 78], 1)
 ])
 def test_multiple_numbers_suitable_args(a, b):
-    assert multiple_numbers(a) == b
+    temp = multiple_numbers(a)
+    logging.debug('multiple_numbers({}) => {}, expected: {}'.format(a, temp, b))
+    assert temp == b
 
 
 @pytest.mark.skipif(True, reason='some reason')

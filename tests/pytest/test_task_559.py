@@ -1,4 +1,5 @@
 import pytest
+
 from tasks.task_559 import is_prime_number, return_prime_number, number_of_mercenn
 
 
@@ -48,18 +49,18 @@ def test_return_prime_number_str_arg(a):
 
 @pytest.mark.suit
 def test_number_of_mercenn_suitable_arg():
-    assert return_prime_number(10) == [3, 7]
+    assert number_of_mercenn(10) == [3, 7]
 
 
 @pytest.mark.exception
 @pytest.mark.parametrize('a', [-142, 10.5])
 def test_number_of_mercenn_unsuitable_arg(a):
     with pytest.raises(ValueError):
-        return_prime_number(a)
+        number_of_mercenn(a)
 
 
 @pytest.mark.exception
 @pytest.mark.parametrize('a', ['788', 'sd8'])
 def test_number_of_mercenn_str_arg(a):
     with pytest.raises(TypeError):
-        return_prime_number(a)
+        number_of_mercenn(a)

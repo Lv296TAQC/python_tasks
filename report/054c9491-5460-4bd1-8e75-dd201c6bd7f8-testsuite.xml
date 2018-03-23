@@ -1,0 +1,74 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521456428264" stop="1521456428301">
+  <name>tests.pytest.test_task_178b</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521456428264" status="passed" stop="1521456428295">
+      <name>test_multiple_numbers_suitable_args[a0-3]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428296" status="passed" stop="1521456428297">
+      <name>test_multiple_numbers_suitable_args[a1-0]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428298" status="passed" stop="1521456428299">
+      <name>test_multiple_numbers_suitable_args[a2-1]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428300" status="canceled" stop="1521456428300">
+      <name>test_multiple_numbers_str_arg[]</name>
+      <failure>
+        <message>Skipped: some reason</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428301" status="canceled" stop="1521456428301">
+      <name>test_multiple_numbers_str_arg[58, -64, 9, 11]</name>
+      <failure>
+        <message>Skipped: some reason</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

@@ -1,0 +1,12 @@
+{
+  "test_task_329.py::test_main_func_str_arg[21-251]": true,
+  "test_task_329.py::test_main_func_suitable_args[3-4-c2]": true,
+  "test_task_329.py::test_main_func_suitable_args[36-36-c3]": true,
+  "test_task_329.py::test_main_func_unsuitable_args[-100-36]": true,
+  "test_task_329.py::test_main_func_unsuitable_args[-5--18]": true,
+  "test_task_329.py::test_main_func_unsuitable_args[10-4.5]": true,
+  "test_task_329.py::test_main_func_unsuitable_args[100--1]": true,
+  "test_task_329.py::test_main_func_unsuitable_args[24.0-36]": true,
+  "test_task_329.py::test_main_func_unsuitable_args[856.5-422.1]": true,
+  "test_task_329.py::test_sum_of_digits_suitable_args[-1-1]": true
+}

@@ -1,0 +1,400 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1521456428414" stop="1521456428487">
+  <name>tests.pytest.test_task_559</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1521456428414" status="passed" stop="1521456428416">
+      <name>test_is_5_prime_number</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428417" status="canceled" stop="1521456428417">
+      <name>test_is_10_not_prime_number</name>
+      <failure>
+        <message>Skipped: some reason</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428418" status="failed" stop="1521456428422">
+      <name>test_is_prime_number_unsuitable_arg[-7]</name>
+      <failure>
+        <message>Failed: DID NOT RAISE &lt;class 'ValueError'&gt;</message>
+        <stack-trace>a = -7
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-7, 0, 2.0])
+    def test_is_prime_number_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           is_prime_number(a)
+E           Failed: DID NOT RAISE &lt;class 'ValueError'&gt;
+
+tests/pytest/test_task_559.py:20: Failed</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428423" status="failed" stop="1521456428426">
+      <name>test_is_prime_number_unsuitable_arg[0]</name>
+      <failure>
+        <message>Failed: DID NOT RAISE &lt;class 'ValueError'&gt;</message>
+        <stack-trace>a = 0
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-7, 0, 2.0])
+    def test_is_prime_number_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           is_prime_number(a)
+E           Failed: DID NOT RAISE &lt;class 'ValueError'&gt;
+
+tests/pytest/test_task_559.py:20: Failed</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428427" status="failed" stop="1521456428431">
+      <name>test_is_prime_number_unsuitable_arg[2.0]</name>
+      <failure>
+        <message>TypeError: 'float' object cannot be interpreted as an integer</message>
+        <stack-trace>a = 2.0
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-7, 0, 2.0])
+    def test_is_prime_number_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           is_prime_number(a)
+
+tests/pytest/test_task_559.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+check_number = 2.0
+
+    def is_prime_number(check_number):
+        """
+        Сheck whether the number is simple
+    
+        Args:
+            check_number(int):any natural number
+    
+        Return:
+            boolean value
+        """
+&gt;       for i in range(2, check_number):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+tasks/task_559.py:14: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428432" status="passed" stop="1521456428433">
+      <name>test_is_prime_number_str_arg[25]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428434" status="passed" stop="1521456428435">
+      <name>test_is_prime_number_str_arg[hhg]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428435" status="passed" stop="1521456428436">
+      <name>test_is_prime_number_str_arg[]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428437" status="failed" stop="1521456428441">
+      <name>test_return_prime_number_suitable_arg</name>
+      <failure>
+        <message>AssertionError: assert [2, 3, 5] == [1, 2, 3, 5]
+  At index 0 diff: 2 != 1
+  Right contains more items, first extra item: 5
+  Use -v to get the full diff</message>
+        <stack-trace>@pytest.mark.suit
+    def test_return_prime_number_suitable_arg():
+&gt;       assert return_prime_number(6) == [1, 2, 3, 5]
+E       assert [2, 3, 5] == [1, 2, 3, 5]
+E         At index 0 diff: 2 != 1
+E         Right contains more items, first extra item: 5
+E         Use -v to get the full diff
+
+tests/pytest/test_task_559.py:32: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428442" status="failed" stop="1521456428446">
+      <name>test_return_prime_number_unsuitable_arg[-12]</name>
+      <failure>
+        <message>Failed: DID NOT RAISE &lt;class 'ValueError'&gt;</message>
+        <stack-trace>a = -12
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-12, 1.0])
+    def test_return_prime_number_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           return_prime_number(a)
+E           Failed: DID NOT RAISE &lt;class 'ValueError'&gt;
+
+tests/pytest/test_task_559.py:39: Failed</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428447" status="failed" stop="1521456428465">
+      <name>test_return_prime_number_unsuitable_arg[1.0]</name>
+      <failure>
+        <message>TypeError: 'float' object cannot be interpreted as an integer</message>
+        <stack-trace>a = 1.0
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-12, 1.0])
+    def test_return_prime_number_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           return_prime_number(a)
+
+tests/pytest/test_task_559.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+limit_number = 1.0
+
+    def return_prime_number(limit_number):
+        """
+        Output a simple number found by the function is_prime_number
+    
+        Args:
+            limit_number(int): any natural number
+    
+        Return:
+            list, which returns prime numbers
+        """
+        list_of_number = []
+&gt;       for counter_number in range(2, limit_number):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+tasks/task_559.py:31: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428466" status="passed" stop="1521456428467">
+      <name>test_return_prime_number_str_arg[6]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428467" status="passed" stop="1521456428468">
+      <name>test_return_prime_number_str_arg[2#6]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428469" status="failed" stop="1521456428472">
+      <name>test_number_of_mercenn_suitable_arg</name>
+      <failure>
+        <message>AssertionError: assert [2, 3, 5, 7] == [3, 7]
+  At index 0 diff: 2 != 3
+  Left contains more items, first extra item: 5
+  Use -v to get the full diff</message>
+        <stack-trace>@pytest.mark.suit
+    def test_number_of_mercenn_suitable_arg():
+&gt;       assert return_prime_number(10) == [3, 7]
+E       assert [2, 3, 5, 7] == [3, 7]
+E         At index 0 diff: 2 != 3
+E         Left contains more items, first extra item: 5
+E         Use -v to get the full diff
+
+tests/pytest/test_task_559.py:51: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428473" status="failed" stop="1521456428477">
+      <name>test_number_of_mercenn_unsuitable_arg[-142]</name>
+      <failure>
+        <message>Failed: DID NOT RAISE &lt;class 'ValueError'&gt;</message>
+        <stack-trace>a = -142
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-142, 10.5])
+    def test_number_of_mercenn_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           return_prime_number(a)
+E           Failed: DID NOT RAISE &lt;class 'ValueError'&gt;
+
+tests/pytest/test_task_559.py:58: Failed</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428478" status="failed" stop="1521456428484">
+      <name>test_number_of_mercenn_unsuitable_arg[10.5]</name>
+      <failure>
+        <message>TypeError: 'float' object cannot be interpreted as an integer</message>
+        <stack-trace>a = 10.5
+
+    @pytest.mark.exception
+    @pytest.mark.parametrize('a', [-142, 10.5])
+    def test_number_of_mercenn_unsuitable_arg(a):
+        with pytest.raises(ValueError):
+&gt;           return_prime_number(a)
+
+tests/pytest/test_task_559.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+limit_number = 10.5
+
+    def return_prime_number(limit_number):
+        """
+        Output a simple number found by the function is_prime_number
+    
+        Args:
+            limit_number(int): any natural number
+    
+        Return:
+            list, which returns prime numbers
+        """
+        list_of_number = []
+&gt;       for counter_number in range(2, limit_number):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+tasks/task_559.py:31: TypeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428485" status="passed" stop="1521456428486">
+      <name>test_number_of_mercenn_str_arg[788]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1521456428486" status="passed" stop="1521456428487">
+      <name>test_number_of_mercenn_str_arg[sd8]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="12176-MainThread"/>
+        <label name="host" value="zoe-HP-ProBook-4540s"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

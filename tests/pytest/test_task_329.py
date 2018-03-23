@@ -1,4 +1,5 @@
 import pytest
+
 from tasks.task_329 import sum_of_digits, main_func
 
 
