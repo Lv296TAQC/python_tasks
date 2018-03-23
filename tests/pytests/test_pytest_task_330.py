@@ -1,10 +1,11 @@
 import pytest
 import allure
+from mock import patch
 from tasks.task_330 import minus_last, ideal
 
 
 @pytest.mark.usefixtures("mock_divisor_value")
-@pytest.allure.step1
+@pytest.allure.step
 def test_01_task_330_minus_last():
     assert minus_last(6) == 6
 
@@ -42,7 +43,12 @@ def test_07_task_330_minus_last():
         minus_last((8, ))
 
 
-@pytest.allure.step2
+@pytest.allure.step
+def test_00_task_330_ideal():
+    with patch('tasks.task_330.minus_last', side_effect=[0, 1, 1, 3, 1, 6]):
+        assert ideal(7) == [6]
+
+
 def test_01_task_330_ideal():
     assert ideal(501) == [6, 28, 496]
 
